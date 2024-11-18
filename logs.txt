@@ -1,0 +1,1142 @@
+2024-11-18 10:48:28,076 - __main__ - INFO - Searching for all csv files in Raw foler.
+2024-11-18 10:48:28,078 - __main__ - INFO - RAW FILE 01 ./src/Data/Raw\heart_01.csv
+2024-11-18 10:48:28,078 - __main__ - INFO - RAW FILE 02 ./src/Data/Raw\heart_02.csv
+2024-11-18 10:48:28,080 - __main__ - INFO - RAW FILE 03 ./src/Data/Raw\heart_03.csv
+2024-11-18 10:48:28,081 - __main__ - INFO - RAW FILE 04 ./src/Data/Raw\heart_04.csv
+2024-11-18 10:48:28,860 - __main__ - INFO - Loading all csv files.
+2024-11-18 10:48:28,862 - __main__ - INFO - Loading file ./src/Data/Raw\heart_01.csv to merger.
+2024-11-18 10:48:28,874 - __main__ - INFO - [MERGER] Successfully loaded file: ./src/Data/Raw\heart_01.csv
+2024-11-18 10:48:28,876 - __main__ - INFO - File ./src/Data/Raw\heart_01.csv to loaded successfully in MERGER.
+2024-11-18 10:48:28,877 - __main__ - INFO - Loading file ./src/Data/Raw\heart_02.csv to merger.
+2024-11-18 10:48:28,893 - __main__ - INFO - [MERGER] Successfully loaded file: ./src/Data/Raw\heart_02.csv
+2024-11-18 10:48:28,894 - __main__ - INFO - File ./src/Data/Raw\heart_02.csv to loaded successfully in MERGER.
+2024-11-18 10:48:28,895 - __main__ - INFO - Loading file ./src/Data/Raw\heart_03.csv to merger.
+2024-11-18 10:48:28,909 - __main__ - INFO - [MERGER] Successfully loaded file: ./src/Data/Raw\heart_03.csv
+2024-11-18 10:48:28,910 - __main__ - INFO - File ./src/Data/Raw\heart_03.csv to loaded successfully in MERGER.
+2024-11-18 10:48:28,911 - __main__ - INFO - Loading file ./src/Data/Raw\heart_04.csv to merger.
+2024-11-18 10:48:28,939 - __main__ - INFO - [MERGER] Successfully loaded file: ./src/Data/Raw\heart_04.csv
+2024-11-18 10:48:28,940 - __main__ - INFO - File ./src/Data/Raw\heart_04.csv to loaded successfully in MERGER.
+2024-11-18 10:48:28,941 - __main__ - INFO - Saving file to u:\Projects\[2922] Data Processing\src/Data/Merged/merged.csv
+2024-11-18 10:48:29,026 - __main__ - INFO - Data successfully saved to u:\Projects\[2922] Data Processing\src/Data/Merged/merged.csv
+2024-11-18 10:48:29,811 - __main__ - INFO - Applying Cleaning to data.
+2024-11-18 10:48:29,812 - __main__ - INFO - Creating Cleaning...
+2024-11-18 10:48:29,814 - __main__ - INFO - Loading data...
+2024-11-18 10:48:29,841 - __main__ - INFO - Data loaded successfully.
+2024-11-18 10:48:29,842 - __main__ - INFO - Starting prcossing data...
+2024-11-18 10:48:29,843 - __main__ - INFO - Starting data cleaning process...
+2024-11-18 10:48:29,884 - __main__ - INFO - [CLEANER] Found missing values:
+sex        918
+cp         918
+restecg    918
+exang      918
+slope      918
+ca         918
+thal       918
+dtype: int64
+2024-11-18 10:48:29,896 - __main__ - WARNING - [CLEANER] Found 13 invalid values in oldpeak
+2024-11-18 10:48:29,900 - __main__ - INFO - [CLEANER] Data cleaning completed. Final shape: (27246, 14)
+2024-11-18 10:48:29,901 - __main__ - INFO - Data processed successfully.
+2024-11-18 10:48:29,902 - __main__ - INFO - Saving file to u:\Projects\[2922] Data Processing\src/Data/Cleaned/cleaned.csv.
+2024-11-18 10:48:29,990 - __main__ - INFO - Data saved to file-u:\Projects\[2922] Data Processing\src/Data/Cleaned/cleaned.csv.
+2024-11-18 10:48:30,732 - __main__ - INFO - Applying Missing Values to data.
+2024-11-18 10:48:30,733 - __main__ - INFO - Creating Missing Values...
+2024-11-18 10:48:30,734 - __main__ - INFO - Loading data...
+2024-11-18 10:48:30,758 - __main__ - INFO - Data loaded successfully.
+2024-11-18 10:48:30,763 - __main__ - INFO - Starting prcossing data...
+2024-11-18 10:48:30,775 - __main__ - INFO - [HandleMissingValues] Applied median imputation to age
+2024-11-18 10:48:30,777 - __main__ - INFO - [HandleMissingValues] Applied mean imputation to trestbps
+2024-11-18 10:48:30,779 - __main__ - INFO - [HandleMissingValues] Applied mean imputation to chol
+2024-11-18 10:48:30,782 - __main__ - INFO - [HandleMissingValues] Applied mean imputation to thalach
+2024-11-18 10:48:30,784 - __main__ - INFO - [HandleMissingValues] Applied mean imputation to oldpeak
+2024-11-18 10:48:30,787 - __main__ - INFO - [HandleMissingValues] Applied most_frequent imputation to cp
+2024-11-18 10:48:30,790 - __main__ - INFO - [HandleMissingValues] Applied most_frequent imputation to restecg
+2024-11-18 10:48:30,793 - __main__ - INFO - [HandleMissingValues] Applied most_frequent imputation to slope
+2024-11-18 10:48:30,795 - __main__ - INFO - [HandleMissingValues] Applied most_frequent imputation to ca
+2024-11-18 10:48:30,798 - __main__ - INFO - [HandleMissingValues] Applied most_frequent imputation to thal
+2024-11-18 10:48:30,812 - __main__ - INFO - Data processed successfully.
+2024-11-18 10:48:30,813 - __main__ - INFO - Saving file to u:\Projects\[2922] Data Processing\src/Data/Processed/handlemissingvalues.csv.
+2024-11-18 10:48:30,940 - __main__ - INFO - Data saved to file-u:\Projects\[2922] Data Processing\src/Data/Processed/handlemissingvalues.csv.
+2024-11-18 10:48:31,709 - __main__ - INFO - Applying Encoding Categorical to data.
+2024-11-18 10:48:31,709 - __main__ - INFO - Creating Encoding Categorical...
+2024-11-18 10:48:31,710 - __main__ - INFO - Loading data...
+2024-11-18 10:48:31,736 - __main__ - INFO - Data loaded successfully.
+2024-11-18 10:48:31,737 - __main__ - INFO - Starting prcossing data...
+2024-11-18 10:48:31,740 - __main__ - INFO - [ENCODER] Applied label encoding to cp
+2024-11-18 10:48:31,741 - __main__ - INFO - [ENCODER] Mapping for cp: {'0': np.int64(0), '1': np.int64(1), '2': np.int64(2), '3': np.int64(3), 'ASY': np.int64(4), 'ATA': np.int64(5), 'NAP': np.int64(6), 'TA': np.int64(7)}
+2024-11-18 10:48:31,743 - __main__ - INFO - [ENCODER] Applied label encoding to restecg
+2024-11-18 10:48:31,744 - __main__ - INFO - [ENCODER] Mapping for restecg: {'0': np.int64(0), '1': np.int64(1), '2': np.int64(2), 'LVH': np.int64(3), 'Normal': np.int64(4), 'ST': np.int64(5)}
+2024-11-18 10:48:31,747 - __main__ - INFO - [ENCODER] Applied one-hot encoding to slope
+2024-11-18 10:48:31,750 - __main__ - INFO - [ENCODER] Applied one-hot encoding to ca
+2024-11-18 10:48:31,752 - __main__ - INFO - [ENCODER] Applied one-hot encoding to thal
+2024-11-18 10:48:31,757 - __main__ - INFO - Data processed successfully.
+2024-11-18 10:48:31,758 - __main__ - INFO - Saving file to u:\Projects\[2922] Data Processing\src/Data/Processed/processedencodeddata.csv.
+2024-11-18 10:48:31,941 - __main__ - INFO - Data saved to file-u:\Projects\[2922] Data Processing\src/Data/Processed/processedencodeddata.csv.
+2024-11-18 10:48:32,672 - __main__ - INFO - Applying Feature Scaler Handler to data.
+2024-11-18 10:48:32,673 - __main__ - INFO - Creating Feature Scaler Handler...
+2024-11-18 10:48:32,674 - __main__ - INFO - Loading data...
+2024-11-18 10:48:32,708 - __main__ - INFO - Data loaded successfully.
+2024-11-18 10:48:32,709 - __main__ - INFO - Starting prcossing data...
+2024-11-18 10:48:32,710 - __main__ - INFO - [FeatureScaler] Scaling columns: ['age', 'cp', 'trestbps', 'chol', 'fbs', 'restecg', 'thalach', 'oldpeak', 'target'] using normalize method.
+2024-11-18 10:48:32,714 - __main__ - INFO - [FeatureScaler] Scaling completed.
+2024-11-18 10:48:32,727 - __main__ - INFO - Data processed successfully.
+2024-11-18 10:48:32,728 - __main__ - INFO - Saving file to u:\Projects\[2922] Data Processing\src/Data/Processed/scaled_data.csv.
+2024-11-18 10:48:33,041 - __main__ - INFO - Data saved to file-u:\Projects\[2922] Data Processing\src/Data/Processed/scaled_data.csv.
+2024-11-18 10:48:33,833 - __main__ - INFO - Applying Feature Engineering Handler to data.
+2024-11-18 10:48:33,833 - __main__ - INFO - Creating Feature Engineering Handler...
+2024-11-18 10:48:33,834 - __main__ - INFO - Loading data...
+2024-11-18 10:48:34,022 - __main__ - INFO - Data loaded successfully.
+2024-11-18 10:48:34,023 - __main__ - INFO - Starting prcossing data...
+2024-11-18 10:48:34,024 - __main__ - INFO - [FeatureEngineering] Encoding categorical columns: ['sex', 'exang'] using one_hot method.
+2024-11-18 10:48:34,028 - __main__ - INFO - Data processed successfully.
+2024-11-18 10:48:34,029 - __main__ - INFO - Saving file to u:\Projects\[2922] Data Processing\src/Data/Processed/engineered_data.csv.
+2024-11-18 10:48:34,386 - __main__ - INFO - Data saved to file-u:\Projects\[2922] Data Processing\src/Data/Processed/engineered_data.csv.
+2024-11-18 10:48:35,136 - __main__ - INFO - Applying Dataset Balancer to data.
+2024-11-18 10:48:35,137 - __main__ - INFO - Creating Dataset Balancer...
+2024-11-18 10:48:35,138 - __main__ - INFO - Loading data...
+2024-11-18 10:48:35,337 - __main__ - INFO - Data loaded successfully.
+2024-11-18 10:48:35,338 - __main__ - INFO - Starting prcossing data...
+2024-11-18 10:48:35,340 - __main__ - INFO - [DatasetBalancer] Handling missing values using mean strategy.
+2024-11-18 10:48:35,360 - __main__ - INFO - [DatasetBalancer] Balancing data using smote method.
+2024-11-18 10:48:35,444 - __main__ - INFO - [DatasetBalancer] Data balancing completed. New shape: (29766, 29)
+2024-11-18 10:48:35,445 - __main__ - INFO - Data processed successfully.
+2024-11-18 10:48:35,447 - __main__ - INFO - Saving file to u:\Projects\[2922] Data Processing\src/Data/Processed/balanced_data.csv.
+2024-11-18 10:48:35,956 - __main__ - INFO - Data saved to file-u:\Projects\[2922] Data Processing\src/Data/Processed/balanced_data.csv.
+2024-11-18 10:48:36,686 - __main__ - INFO - Applying Outlier Detector & Removal Handler to data.
+2024-11-18 10:48:36,686 - __main__ - INFO - Creating Outlier Detector & Removal Handler...
+2024-11-18 10:48:36,689 - __main__ - INFO - Loading data...
+2024-11-18 10:48:36,769 - __main__ - INFO - Data loaded successfully.
+2024-11-18 10:48:36,770 - __main__ - INFO - Starting prcossing data...
+2024-11-18 10:48:36,771 - __main__ - WARNING - [OutlierDetector] No outliers detected. Running detect outliers...
+2024-11-18 10:48:36,772 - __main__ - INFO - [OutlierDetector] Detecting outliers in columns: ['age', 'cp', 'trestbps', 'chol', 'fbs', 'restecg', 'thalach', 'oldpeak', 'slope_1', 'slope_2', 'slope_Down', 'slope_Flat', 'slope_Up', 'ca_1.0', 'ca_2.0', 'ca_3.0', 'ca_4.0', 'thal_1.0', 'thal_2.0', 'thal_3.0', 'sex_0', 'sex_1', 'sex_F', 'sex_M', 'exang_0', 'exang_1', 'exang_N', 'exang_Y', 'target'] using iqr method.
+2024-11-18 10:48:36,802 - __main__ - INFO - [OutlierDetector] Outlier detection completed. Found 17001 outliers.
+2024-11-18 10:48:36,803 - __main__ - INFO - [OutlierDetector] Removing detected outliers from the dataset.
+2024-11-18 10:48:36,805 - __main__ - INFO - [OutlierDetector] Outliers removed. New shape of data: (12765, 29)
+2024-11-18 10:48:36,806 - __main__ - INFO - Data processed successfully.
+2024-11-18 10:48:36,807 - __main__ - INFO - Saving file to u:\Projects\[2922] Data Processing\src/Data/Processed/outliers_removed.csv.
+2024-11-18 10:48:37,011 - __main__ - INFO - Data saved to file-u:\Projects\[2922] Data Processing\src/Data/Processed/outliers_removed.csv.
+2024-11-18 10:48:37,769 - __main__ - INFO - Applying Feature Selector Handler to data.
+2024-11-18 10:48:37,770 - __main__ - INFO - Creating Feature Selector Handler...
+2024-11-18 10:48:37,771 - __main__ - INFO - Loading data...
+2024-11-18 10:48:37,825 - __main__ - INFO - Data loaded successfully.
+2024-11-18 10:48:37,827 - __main__ - INFO - Starting prcossing data...
+2024-11-18 10:48:37,828 - __main__ - INFO - [FeatureSelector] Selecting top 5 features using SelectKBest.
+2024-11-18 10:48:37,833 - __main__ - INFO - [FeatureSelector] Selected features: ['thalach', 'thal_2.0', 'thal_3.0', 'exang_0', 'exang_1']
+2024-11-18 10:48:37,834 - __main__ - INFO - Data processed successfully.
+2024-11-18 10:48:37,835 - __main__ - INFO - Saving file to u:\Projects\[2922] Data Processing\src/Data/Processed/selected_features.csv.
+2024-11-18 10:48:38,052 - __main__ - INFO - Data saved to file-u:\Projects\[2922] Data Processing\src/Data/Processed/selected_features.csv.
+2024-11-18 10:48:38,820 - __main__ - INFO - [EDA] Basic Information:
+2024-11-18 10:48:38,824 - __main__ - INFO - [EDA] Data Info:
+None
+2024-11-18 10:48:38,827 - __main__ - INFO - [EDA] First few rows of the data:
+        age        cp  trestbps      chol  fbs  restecg   thalach   oldpeak  \
+0  0.183673  0.285714      0.65  0.414594  0.0      0.2  0.894366  0.693182   
+1  0.265306  0.142857      0.65  0.338308  0.0      0.0  0.788732  0.454545   
+2  0.571429  0.142857      0.60  0.391376  0.0      0.2  0.830986  0.386364   
+3  0.591837  0.000000      0.60  0.587065  0.0      0.2  0.725352  0.363636   
+4  0.571429  0.142857      0.70  0.487562  0.0      0.0  0.654930  0.443182   
+
+   slope_1  slope_2  ...  thal_3.0  sex_0  sex_1  sex_F  sex_M  exang_0  \
+0      0.0      0.0  ...       0.0    0.0    1.0    0.0    0.0      1.0   
+1      0.0      1.0  ...       0.0    1.0    0.0    0.0    0.0      1.0   
+2      0.0      1.0  ...       0.0    0.0    1.0    0.0    0.0      1.0   
+3      0.0      1.0  ...       0.0    1.0    0.0    0.0    0.0      0.0   
+4      1.0      0.0  ...       0.0    1.0    0.0    0.0    0.0      1.0   
+
+   exang_1  exang_N  exang_Y  target  
+0      0.0      0.0      0.0     1.0  
+1      0.0      0.0      0.0     1.0  
+2      0.0      0.0      0.0     1.0  
+3      1.0      0.0      0.0     1.0  
+4      0.0      0.0      0.0     1.0  
+
+[5 rows x 29 columns]
+2024-11-18 10:48:38,829 - __main__ - INFO - [EDA] Missing values:
+age           0
+cp            0
+trestbps      0
+chol          0
+fbs           0
+restecg       0
+thalach       0
+oldpeak       0
+slope_1       0
+slope_2       0
+slope_Down    0
+slope_Flat    0
+slope_Up      0
+ca_1.0        0
+ca_2.0        0
+ca_3.0        0
+ca_4.0        0
+thal_1.0      0
+thal_2.0      0
+thal_3.0      0
+sex_0         0
+sex_1         0
+sex_F         0
+sex_M         0
+exang_0       0
+exang_1       0
+exang_N       0
+exang_Y       0
+target        0
+dtype: int64
+2024-11-18 10:48:38,851 - __main__ - INFO - [EDA] Summary statistics for numerical columns:
+                age            cp      trestbps          chol      fbs  \
+count  12765.000000  12765.000000  12765.000000  12765.000000  12765.0   
+mean       0.463941      0.158368      0.643409      0.398914      0.0   
+std        0.190454      0.142664      0.076453      0.075066      0.0   
+min        0.020408      0.000000      0.470000      0.233831      0.0   
+25%        0.306122      0.000000      0.600000      0.346600      0.0   
+50%        0.448980      0.142857      0.650000      0.391376      0.0   
+75%        0.612245      0.285714      0.700000      0.442786      0.0   
+max        0.979592      0.428571      0.850000      0.597015      0.0   
+
+            restecg       thalach       oldpeak       slope_1       slope_2  \
+count  12765.000000  12765.000000  12765.000000  12765.000000  12765.000000   
+mean       0.112495      0.679813      0.377863      0.385586      0.561692   
+std        0.101931      0.139819      0.103215      0.486752      0.496199   
+min        0.000000      0.359155      0.295455      0.000000      0.000000   
+25%        0.000000      0.584507      0.295455      0.000000      0.000000   
+50%        0.200000      0.704225      0.340909      0.000000      1.000000   
+75%        0.200000      0.788732      0.431818      1.000000      1.000000   
+max        0.400000      1.000000      0.727273      1.000000      1.000000   
+
+       ...      thal_3.0         sex_0         sex_1    sex_F    sex_M  \
+count  ...  12765.000000  12765.000000  12765.000000  12765.0  12765.0   
+mean   ...      0.306228      0.383314      0.616686      0.0      0.0   
+std    ...      0.460944      0.486213      0.486213      0.0      0.0   
+min    ...      0.000000      0.000000      0.000000      0.0      0.0   
+25%    ...      0.000000      0.000000      0.000000      0.0      0.0   
+50%    ...      0.000000      0.000000      1.000000      0.0      0.0   
+75%    ...      1.000000      1.000000      1.000000      0.0      0.0   
+max    ...      1.000000      1.000000      1.000000      0.0      0.0   
+
+            exang_0       exang_1  exang_N  exang_Y        target  
+count  12765.000000  12765.000000  12765.0  12765.0  12765.000000  
+mean       0.766471      0.233529      0.0      0.0      0.723463  
+std        0.423093      0.423093      0.0      0.0      0.447303  
+min        0.000000      0.000000      0.0      0.0      0.000000  
+25%        1.000000      0.000000      0.0      0.0      0.000000  
+50%        1.000000      0.000000      0.0      0.0      1.000000  
+75%        1.000000      0.000000      0.0      0.0      1.000000  
+max        1.000000      1.000000      0.0      0.0      1.000000  
+
+[8 rows x 29 columns]
+2024-11-18 10:48:38,852 - __main__ - INFO - [EDA] No categorical columns found.
+2024-11-18 10:48:40,289 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/histograms.png
+2024-11-18 10:48:40,350 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/boxplot_age.png
+2024-11-18 10:48:40,407 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/boxplot_cp.png
+2024-11-18 10:48:40,470 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/boxplot_trestbps.png
+2024-11-18 10:48:40,534 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/boxplot_chol.png
+2024-11-18 10:48:40,590 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/boxplot_fbs.png
+2024-11-18 10:48:40,655 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/boxplot_restecg.png
+2024-11-18 10:48:40,715 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/boxplot_thalach.png
+2024-11-18 10:48:40,775 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/boxplot_oldpeak.png
+2024-11-18 10:48:40,834 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/boxplot_slope_1.png
+2024-11-18 10:48:40,893 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/boxplot_slope_2.png
+2024-11-18 10:48:40,959 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/boxplot_slope_Down.png
+2024-11-18 10:48:41,016 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/boxplot_slope_Flat.png
+2024-11-18 10:48:41,071 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/boxplot_slope_Up.png
+2024-11-18 10:48:41,131 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/boxplot_ca_1.0.png
+2024-11-18 10:48:41,191 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/boxplot_ca_2.0.png
+2024-11-18 10:48:41,247 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/boxplot_ca_3.0.png
+2024-11-18 10:48:41,304 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/boxplot_ca_4.0.png
+2024-11-18 10:48:41,362 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/boxplot_thal_1.0.png
+2024-11-18 10:48:41,421 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/boxplot_thal_2.0.png
+2024-11-18 10:48:41,485 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/boxplot_thal_3.0.png
+2024-11-18 10:48:41,544 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/boxplot_sex_0.png
+2024-11-18 10:48:41,604 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/boxplot_sex_1.png
+2024-11-18 10:48:41,660 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/boxplot_sex_F.png
+2024-11-18 10:48:41,717 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/boxplot_sex_M.png
+2024-11-18 10:48:41,781 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/boxplot_exang_0.png
+2024-11-18 10:48:41,844 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/boxplot_exang_1.png
+2024-11-18 10:48:41,903 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/boxplot_exang_N.png
+2024-11-18 10:48:43,997 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/boxplot_exang_Y.png
+2024-11-18 10:48:44,058 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/boxplot_target.png
+2024-11-18 10:48:44,402 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/correlation_heatmap.png
+2024-11-18 10:50:14,686 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/pairplot.png
+2024-11-18 10:50:14,797 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_age_vs_cp.png
+2024-11-18 10:50:14,896 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_age_vs_trestbps.png
+2024-11-18 10:50:14,994 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_age_vs_chol.png
+2024-11-18 10:50:15,084 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_age_vs_fbs.png
+2024-11-18 10:50:15,184 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_age_vs_restecg.png
+2024-11-18 10:50:15,283 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_age_vs_thalach.png
+2024-11-18 10:50:15,383 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_age_vs_oldpeak.png
+2024-11-18 10:50:15,474 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_age_vs_slope_1.png
+2024-11-18 10:50:15,567 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_age_vs_slope_2.png
+2024-11-18 10:50:15,656 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_age_vs_slope_Down.png
+2024-11-18 10:50:15,746 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_age_vs_slope_Flat.png
+2024-11-18 10:50:15,839 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_age_vs_slope_Up.png
+2024-11-18 10:50:15,938 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_age_vs_ca_1.0.png
+2024-11-18 10:50:16,029 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_age_vs_ca_2.0.png
+2024-11-18 10:50:16,120 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_age_vs_ca_3.0.png
+2024-11-18 10:50:16,213 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_age_vs_ca_4.0.png
+2024-11-18 10:50:16,304 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_age_vs_thal_1.0.png
+2024-11-18 10:50:16,396 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_age_vs_thal_2.0.png
+2024-11-18 10:50:16,487 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_age_vs_thal_3.0.png
+2024-11-18 10:50:16,579 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_age_vs_sex_0.png
+2024-11-18 10:50:16,670 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_age_vs_sex_1.png
+2024-11-18 10:50:16,759 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_age_vs_sex_F.png
+2024-11-18 10:50:16,848 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_age_vs_sex_M.png
+2024-11-18 10:50:16,940 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_age_vs_exang_0.png
+2024-11-18 10:50:17,031 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_age_vs_exang_1.png
+2024-11-18 10:50:17,122 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_age_vs_exang_N.png
+2024-11-18 10:50:17,211 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_age_vs_exang_Y.png
+2024-11-18 10:50:17,310 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_age_vs_target.png
+2024-11-18 10:50:17,401 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_cp_vs_age.png
+2024-11-18 10:50:17,498 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_cp_vs_trestbps.png
+2024-11-18 10:50:17,610 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_cp_vs_chol.png
+2024-11-18 10:50:17,696 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_cp_vs_fbs.png
+2024-11-18 10:50:17,793 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_cp_vs_restecg.png
+2024-11-18 10:50:17,891 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_cp_vs_thalach.png
+2024-11-18 10:50:17,980 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_cp_vs_oldpeak.png
+2024-11-18 10:50:18,071 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_cp_vs_slope_1.png
+2024-11-18 10:50:18,162 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_cp_vs_slope_2.png
+2024-11-18 10:50:18,251 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_cp_vs_slope_Down.png
+2024-11-18 10:50:18,340 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_cp_vs_slope_Flat.png
+2024-11-18 10:50:18,430 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_cp_vs_slope_Up.png
+2024-11-18 10:50:18,520 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_cp_vs_ca_1.0.png
+2024-11-18 10:50:18,610 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_cp_vs_ca_2.0.png
+2024-11-18 10:50:18,698 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_cp_vs_ca_3.0.png
+2024-11-18 10:50:18,787 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_cp_vs_ca_4.0.png
+2024-11-18 10:50:18,875 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_cp_vs_thal_1.0.png
+2024-11-18 10:50:18,979 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_cp_vs_thal_2.0.png
+2024-11-18 10:50:19,069 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_cp_vs_thal_3.0.png
+2024-11-18 10:50:19,158 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_cp_vs_sex_0.png
+2024-11-18 10:50:19,249 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_cp_vs_sex_1.png
+2024-11-18 10:50:19,339 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_cp_vs_sex_F.png
+2024-11-18 10:50:19,426 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_cp_vs_sex_M.png
+2024-11-18 10:50:19,517 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_cp_vs_exang_0.png
+2024-11-18 10:50:19,608 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_cp_vs_exang_1.png
+2024-11-18 10:50:19,696 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_cp_vs_exang_N.png
+2024-11-18 10:50:19,784 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_cp_vs_exang_Y.png
+2024-11-18 10:50:19,876 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_cp_vs_target.png
+2024-11-18 10:50:19,976 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_trestbps_vs_age.png
+2024-11-18 10:50:20,072 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_trestbps_vs_cp.png
+2024-11-18 10:50:20,181 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_trestbps_vs_chol.png
+2024-11-18 10:50:20,276 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_trestbps_vs_fbs.png
+2024-11-18 10:50:20,379 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_trestbps_vs_restecg.png
+2024-11-18 10:50:20,480 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_trestbps_vs_thalach.png
+2024-11-18 10:50:20,581 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_trestbps_vs_oldpeak.png
+2024-11-18 10:50:20,691 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_trestbps_vs_slope_1.png
+2024-11-18 10:50:20,787 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_trestbps_vs_slope_2.png
+2024-11-18 10:50:20,884 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_trestbps_vs_slope_Down.png
+2024-11-18 10:50:20,982 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_trestbps_vs_slope_Flat.png
+2024-11-18 10:50:21,081 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_trestbps_vs_slope_Up.png
+2024-11-18 10:50:21,176 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_trestbps_vs_ca_1.0.png
+2024-11-18 10:50:21,271 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_trestbps_vs_ca_2.0.png
+2024-11-18 10:50:21,369 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_trestbps_vs_ca_3.0.png
+2024-11-18 10:50:21,463 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_trestbps_vs_ca_4.0.png
+2024-11-18 10:50:21,558 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_trestbps_vs_thal_1.0.png
+2024-11-18 10:50:21,656 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_trestbps_vs_thal_2.0.png
+2024-11-18 10:50:21,785 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_trestbps_vs_thal_3.0.png
+2024-11-18 10:50:21,887 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_trestbps_vs_sex_0.png
+2024-11-18 10:50:21,995 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_trestbps_vs_sex_1.png
+2024-11-18 10:50:22,097 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_trestbps_vs_sex_F.png
+2024-11-18 10:50:22,198 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_trestbps_vs_sex_M.png
+2024-11-18 10:50:22,294 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_trestbps_vs_exang_0.png
+2024-11-18 10:50:22,392 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_trestbps_vs_exang_1.png
+2024-11-18 10:50:22,488 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_trestbps_vs_exang_N.png
+2024-11-18 10:50:22,582 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_trestbps_vs_exang_Y.png
+2024-11-18 10:50:22,681 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_trestbps_vs_target.png
+2024-11-18 10:50:22,781 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_chol_vs_age.png
+2024-11-18 10:50:22,876 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_chol_vs_cp.png
+2024-11-18 10:50:22,977 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_chol_vs_trestbps.png
+2024-11-18 10:50:23,073 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_chol_vs_fbs.png
+2024-11-18 10:50:23,174 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_chol_vs_restecg.png
+2024-11-18 10:50:23,275 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_chol_vs_thalach.png
+2024-11-18 10:50:23,373 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_chol_vs_oldpeak.png
+2024-11-18 10:50:23,468 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_chol_vs_slope_1.png
+2024-11-18 10:50:23,568 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_chol_vs_slope_2.png
+2024-11-18 10:50:23,666 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_chol_vs_slope_Down.png
+2024-11-18 10:50:23,762 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_chol_vs_slope_Flat.png
+2024-11-18 10:50:23,860 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_chol_vs_slope_Up.png
+2024-11-18 10:50:23,955 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_chol_vs_ca_1.0.png
+2024-11-18 10:50:24,048 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_chol_vs_ca_2.0.png
+2024-11-18 10:50:24,145 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_chol_vs_ca_3.0.png
+2024-11-18 10:50:24,239 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_chol_vs_ca_4.0.png
+2024-11-18 10:50:24,336 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_chol_vs_thal_1.0.png
+2024-11-18 10:50:24,435 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_chol_vs_thal_2.0.png
+2024-11-18 10:50:24,532 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_chol_vs_thal_3.0.png
+2024-11-18 10:50:24,626 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_chol_vs_sex_0.png
+2024-11-18 10:50:24,722 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_chol_vs_sex_1.png
+2024-11-18 10:50:24,817 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_chol_vs_sex_F.png
+2024-11-18 10:50:24,911 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_chol_vs_sex_M.png
+2024-11-18 10:50:25,007 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_chol_vs_exang_0.png
+2024-11-18 10:50:25,103 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_chol_vs_exang_1.png
+2024-11-18 10:50:25,196 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_chol_vs_exang_N.png
+2024-11-18 10:50:25,291 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_chol_vs_exang_Y.png
+2024-11-18 10:50:25,899 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_chol_vs_target.png
+2024-11-18 10:50:25,993 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_fbs_vs_age.png
+2024-11-18 10:50:26,084 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_fbs_vs_cp.png
+2024-11-18 10:50:26,180 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_fbs_vs_trestbps.png
+2024-11-18 10:50:26,277 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_fbs_vs_chol.png
+2024-11-18 10:50:26,371 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_fbs_vs_restecg.png
+2024-11-18 10:50:26,465 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_fbs_vs_thalach.png
+2024-11-18 10:50:26,556 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_fbs_vs_oldpeak.png
+2024-11-18 10:50:26,647 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_fbs_vs_slope_1.png
+2024-11-18 10:50:26,735 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_fbs_vs_slope_2.png
+2024-11-18 10:50:26,825 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_fbs_vs_slope_Down.png
+2024-11-18 10:50:26,913 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_fbs_vs_slope_Flat.png
+2024-11-18 10:50:27,003 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_fbs_vs_slope_Up.png
+2024-11-18 10:50:27,095 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_fbs_vs_ca_1.0.png
+2024-11-18 10:50:27,185 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_fbs_vs_ca_2.0.png
+2024-11-18 10:50:27,273 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_fbs_vs_ca_3.0.png
+2024-11-18 10:50:27,361 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_fbs_vs_ca_4.0.png
+2024-11-18 10:50:27,449 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_fbs_vs_thal_1.0.png
+2024-11-18 10:50:27,540 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_fbs_vs_thal_2.0.png
+2024-11-18 10:50:27,634 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_fbs_vs_thal_3.0.png
+2024-11-18 10:50:27,724 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_fbs_vs_sex_0.png
+2024-11-18 10:50:27,817 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_fbs_vs_sex_1.png
+2024-11-18 10:50:27,908 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_fbs_vs_sex_F.png
+2024-11-18 10:50:27,998 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_fbs_vs_sex_M.png
+2024-11-18 10:50:28,090 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_fbs_vs_exang_0.png
+2024-11-18 10:50:28,180 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_fbs_vs_exang_1.png
+2024-11-18 10:50:28,270 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_fbs_vs_exang_N.png
+2024-11-18 10:50:28,372 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_fbs_vs_exang_Y.png
+2024-11-18 10:50:28,462 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_fbs_vs_target.png
+2024-11-18 10:50:28,563 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_restecg_vs_age.png
+2024-11-18 10:50:28,659 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_restecg_vs_cp.png
+2024-11-18 10:50:28,763 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_restecg_vs_trestbps.png
+2024-11-18 10:50:28,867 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_restecg_vs_chol.png
+2024-11-18 10:50:28,992 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_restecg_vs_fbs.png
+2024-11-18 10:50:29,102 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_restecg_vs_thalach.png
+2024-11-18 10:50:29,209 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_restecg_vs_oldpeak.png
+2024-11-18 10:50:29,314 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_restecg_vs_slope_1.png
+2024-11-18 10:50:29,417 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_restecg_vs_slope_2.png
+2024-11-18 10:50:29,514 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_restecg_vs_slope_Down.png
+2024-11-18 10:50:29,616 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_restecg_vs_slope_Flat.png
+2024-11-18 10:50:29,721 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_restecg_vs_slope_Up.png
+2024-11-18 10:50:29,828 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_restecg_vs_ca_1.0.png
+2024-11-18 10:50:29,927 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_restecg_vs_ca_2.0.png
+2024-11-18 10:50:30,027 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_restecg_vs_ca_3.0.png
+2024-11-18 10:50:30,125 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_restecg_vs_ca_4.0.png
+2024-11-18 10:50:30,224 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_restecg_vs_thal_1.0.png
+2024-11-18 10:50:30,329 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_restecg_vs_thal_2.0.png
+2024-11-18 10:50:30,430 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_restecg_vs_thal_3.0.png
+2024-11-18 10:50:30,533 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_restecg_vs_sex_0.png
+2024-11-18 10:50:30,632 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_restecg_vs_sex_1.png
+2024-11-18 10:50:30,730 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_restecg_vs_sex_F.png
+2024-11-18 10:50:30,827 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_restecg_vs_sex_M.png
+2024-11-18 10:50:30,926 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_restecg_vs_exang_0.png
+2024-11-18 10:50:31,026 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_restecg_vs_exang_1.png
+2024-11-18 10:50:31,127 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_restecg_vs_exang_N.png
+2024-11-18 10:50:31,230 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_restecg_vs_exang_Y.png
+2024-11-18 10:50:31,328 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_restecg_vs_target.png
+2024-11-18 10:50:31,429 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_thalach_vs_age.png
+2024-11-18 10:50:31,525 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_thalach_vs_cp.png
+2024-11-18 10:50:31,622 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_thalach_vs_trestbps.png
+2024-11-18 10:50:31,724 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_thalach_vs_chol.png
+2024-11-18 10:50:31,816 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_thalach_vs_fbs.png
+2024-11-18 10:50:31,915 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_thalach_vs_restecg.png
+2024-11-18 10:50:32,014 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_thalach_vs_oldpeak.png
+2024-11-18 10:50:32,111 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_thalach_vs_slope_1.png
+2024-11-18 10:50:32,204 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_thalach_vs_slope_2.png
+2024-11-18 10:50:32,300 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_thalach_vs_slope_Down.png
+2024-11-18 10:50:32,393 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_thalach_vs_slope_Flat.png
+2024-11-18 10:50:32,488 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_thalach_vs_slope_Up.png
+2024-11-18 10:50:32,584 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_thalach_vs_ca_1.0.png
+2024-11-18 10:50:32,674 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_thalach_vs_ca_2.0.png
+2024-11-18 10:50:32,767 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_thalach_vs_ca_3.0.png
+2024-11-18 10:50:32,860 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_thalach_vs_ca_4.0.png
+2024-11-18 10:50:32,955 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_thalach_vs_thal_1.0.png
+2024-11-18 10:50:33,048 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_thalach_vs_thal_2.0.png
+2024-11-18 10:50:33,142 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_thalach_vs_thal_3.0.png
+2024-11-18 10:50:33,234 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_thalach_vs_sex_0.png
+2024-11-18 10:50:33,330 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_thalach_vs_sex_1.png
+2024-11-18 10:50:33,422 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_thalach_vs_sex_F.png
+2024-11-18 10:50:33,516 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_thalach_vs_sex_M.png
+2024-11-18 10:50:33,608 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_thalach_vs_exang_0.png
+2024-11-18 10:50:33,703 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_thalach_vs_exang_1.png
+2024-11-18 10:50:33,797 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_thalach_vs_exang_N.png
+2024-11-18 10:50:33,890 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_thalach_vs_exang_Y.png
+2024-11-18 10:50:33,988 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_thalach_vs_target.png
+2024-11-18 10:50:34,083 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_oldpeak_vs_age.png
+2024-11-18 10:50:34,171 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_oldpeak_vs_cp.png
+2024-11-18 10:50:34,269 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_oldpeak_vs_trestbps.png
+2024-11-18 10:50:34,364 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_oldpeak_vs_chol.png
+2024-11-18 10:50:34,453 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_oldpeak_vs_fbs.png
+2024-11-18 10:50:34,549 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_oldpeak_vs_restecg.png
+2024-11-18 10:50:34,643 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_oldpeak_vs_thalach.png
+2024-11-18 10:50:34,734 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_oldpeak_vs_slope_1.png
+2024-11-18 10:50:34,826 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_oldpeak_vs_slope_2.png
+2024-11-18 10:50:34,919 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_oldpeak_vs_slope_Down.png
+2024-11-18 10:50:35,007 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_oldpeak_vs_slope_Flat.png
+2024-11-18 10:50:35,096 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_oldpeak_vs_slope_Up.png
+2024-11-18 10:50:35,184 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_oldpeak_vs_ca_1.0.png
+2024-11-18 10:50:35,273 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_oldpeak_vs_ca_2.0.png
+2024-11-18 10:50:35,362 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_oldpeak_vs_ca_3.0.png
+2024-11-18 10:50:35,451 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_oldpeak_vs_ca_4.0.png
+2024-11-18 10:50:35,550 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_oldpeak_vs_thal_1.0.png
+2024-11-18 10:50:35,640 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_oldpeak_vs_thal_2.0.png
+2024-11-18 10:50:35,733 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_oldpeak_vs_thal_3.0.png
+2024-11-18 10:50:35,826 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_oldpeak_vs_sex_0.png
+2024-11-18 10:50:35,942 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_oldpeak_vs_sex_1.png
+2024-11-18 10:50:36,032 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_oldpeak_vs_sex_F.png
+2024-11-18 10:50:36,119 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_oldpeak_vs_sex_M.png
+2024-11-18 10:50:36,210 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_oldpeak_vs_exang_0.png
+2024-11-18 10:50:36,299 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_oldpeak_vs_exang_1.png
+2024-11-18 10:50:36,388 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_oldpeak_vs_exang_N.png
+2024-11-18 10:50:36,479 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_oldpeak_vs_exang_Y.png
+2024-11-18 10:50:36,574 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_oldpeak_vs_target.png
+2024-11-18 10:50:36,668 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_slope_1_vs_age.png
+2024-11-18 10:50:36,756 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_slope_1_vs_cp.png
+2024-11-18 10:50:36,854 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_slope_1_vs_trestbps.png
+2024-11-18 10:50:36,952 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_slope_1_vs_chol.png
+2024-11-18 10:50:37,041 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_slope_1_vs_fbs.png
+2024-11-18 10:50:37,137 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_slope_1_vs_restecg.png
+2024-11-18 10:50:37,233 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_slope_1_vs_thalach.png
+2024-11-18 10:50:37,335 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_slope_1_vs_oldpeak.png
+2024-11-18 10:50:37,427 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_slope_1_vs_slope_2.png
+2024-11-18 10:50:37,518 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_slope_1_vs_slope_Down.png
+2024-11-18 10:50:37,623 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_slope_1_vs_slope_Flat.png
+2024-11-18 10:50:37,714 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_slope_1_vs_slope_Up.png
+2024-11-18 10:50:37,804 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_slope_1_vs_ca_1.0.png
+2024-11-18 10:50:37,896 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_slope_1_vs_ca_2.0.png
+2024-11-18 10:50:37,989 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_slope_1_vs_ca_3.0.png
+2024-11-18 10:50:38,091 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_slope_1_vs_ca_4.0.png
+2024-11-18 10:50:38,183 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_slope_1_vs_thal_1.0.png
+2024-11-18 10:50:38,274 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_slope_1_vs_thal_2.0.png
+2024-11-18 10:50:38,365 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_slope_1_vs_thal_3.0.png
+2024-11-18 10:50:38,457 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_slope_1_vs_sex_0.png
+2024-11-18 10:50:38,548 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_slope_1_vs_sex_1.png
+2024-11-18 10:50:38,639 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_slope_1_vs_sex_F.png
+2024-11-18 10:50:38,736 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_slope_1_vs_sex_M.png
+2024-11-18 10:50:38,827 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_slope_1_vs_exang_0.png
+2024-11-18 10:50:38,919 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_slope_1_vs_exang_1.png
+2024-11-18 10:50:39,009 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_slope_1_vs_exang_N.png
+2024-11-18 10:50:39,100 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_slope_1_vs_exang_Y.png
+2024-11-18 10:50:39,195 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_slope_1_vs_target.png
+2024-11-18 10:50:39,287 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_slope_2_vs_age.png
+2024-11-18 10:50:39,377 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_slope_2_vs_cp.png
+2024-11-18 10:50:39,477 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_slope_2_vs_trestbps.png
+2024-11-18 10:50:39,576 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_slope_2_vs_chol.png
+2024-11-18 10:50:39,668 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_slope_2_vs_fbs.png
+2024-11-18 10:50:39,769 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_slope_2_vs_restecg.png
+2024-11-18 10:50:39,869 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_slope_2_vs_thalach.png
+2024-11-18 10:50:39,960 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_slope_2_vs_oldpeak.png
+2024-11-18 10:50:40,058 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_slope_2_vs_slope_1.png
+2024-11-18 10:50:40,151 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_slope_2_vs_slope_Down.png
+2024-11-18 10:50:40,244 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_slope_2_vs_slope_Flat.png
+2024-11-18 10:50:40,337 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_slope_2_vs_slope_Up.png
+2024-11-18 10:50:40,431 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_slope_2_vs_ca_1.0.png
+2024-11-18 10:50:40,523 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_slope_2_vs_ca_2.0.png
+2024-11-18 10:50:40,613 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_slope_2_vs_ca_3.0.png
+2024-11-18 10:50:40,700 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_slope_2_vs_ca_4.0.png
+2024-11-18 10:50:40,789 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_slope_2_vs_thal_1.0.png
+2024-11-18 10:50:40,884 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_slope_2_vs_thal_2.0.png
+2024-11-18 10:50:40,975 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_slope_2_vs_thal_3.0.png
+2024-11-18 10:50:41,065 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_slope_2_vs_sex_0.png
+2024-11-18 10:50:41,157 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_slope_2_vs_sex_1.png
+2024-11-18 10:50:41,248 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_slope_2_vs_sex_F.png
+2024-11-18 10:50:41,340 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_slope_2_vs_sex_M.png
+2024-11-18 10:50:41,444 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_slope_2_vs_exang_0.png
+2024-11-18 10:50:41,537 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_slope_2_vs_exang_1.png
+2024-11-18 10:50:41,628 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_slope_2_vs_exang_N.png
+2024-11-18 10:50:41,717 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_slope_2_vs_exang_Y.png
+2024-11-18 10:50:41,808 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_slope_2_vs_target.png
+2024-11-18 10:50:41,899 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_slope_Down_vs_age.png
+2024-11-18 10:50:41,989 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_slope_Down_vs_cp.png
+2024-11-18 10:50:42,083 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_slope_Down_vs_trestbps.png
+2024-11-18 10:50:42,179 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_slope_Down_vs_chol.png
+2024-11-18 10:50:42,266 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_slope_Down_vs_fbs.png
+2024-11-18 10:50:42,360 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_slope_Down_vs_restecg.png
+2024-11-18 10:50:42,455 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_slope_Down_vs_thalach.png
+2024-11-18 10:50:42,545 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_slope_Down_vs_oldpeak.png
+2024-11-18 10:50:42,637 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_slope_Down_vs_slope_1.png
+2024-11-18 10:50:42,728 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_slope_Down_vs_slope_2.png
+2024-11-18 10:50:42,828 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_slope_Down_vs_slope_Flat.png
+2024-11-18 10:50:42,924 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_slope_Down_vs_slope_Up.png
+2024-11-18 10:50:43,011 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_slope_Down_vs_ca_1.0.png
+2024-11-18 10:50:43,099 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_slope_Down_vs_ca_2.0.png
+2024-11-18 10:50:43,190 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_slope_Down_vs_ca_3.0.png
+2024-11-18 10:50:43,279 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_slope_Down_vs_ca_4.0.png
+2024-11-18 10:50:43,369 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_slope_Down_vs_thal_1.0.png
+2024-11-18 10:50:43,459 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_slope_Down_vs_thal_2.0.png
+2024-11-18 10:50:43,551 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_slope_Down_vs_thal_3.0.png
+2024-11-18 10:50:43,639 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_slope_Down_vs_sex_0.png
+2024-11-18 10:50:43,730 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_slope_Down_vs_sex_1.png
+2024-11-18 10:50:43,817 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_slope_Down_vs_sex_F.png
+2024-11-18 10:50:43,906 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_slope_Down_vs_sex_M.png
+2024-11-18 10:50:43,996 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_slope_Down_vs_exang_0.png
+2024-11-18 10:50:44,088 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_slope_Down_vs_exang_1.png
+2024-11-18 10:50:44,175 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_slope_Down_vs_exang_N.png
+2024-11-18 10:50:44,265 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_slope_Down_vs_exang_Y.png
+2024-11-18 10:50:44,355 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_slope_Down_vs_target.png
+2024-11-18 10:50:44,447 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_slope_Flat_vs_age.png
+2024-11-18 10:50:44,536 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_slope_Flat_vs_cp.png
+2024-11-18 10:50:44,631 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_slope_Flat_vs_trestbps.png
+2024-11-18 10:50:44,726 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_slope_Flat_vs_chol.png
+2024-11-18 10:50:44,814 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_slope_Flat_vs_fbs.png
+2024-11-18 10:50:44,911 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_slope_Flat_vs_restecg.png
+2024-11-18 10:50:45,005 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_slope_Flat_vs_thalach.png
+2024-11-18 10:50:45,097 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_slope_Flat_vs_oldpeak.png
+2024-11-18 10:50:45,189 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_slope_Flat_vs_slope_1.png
+2024-11-18 10:50:45,277 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_slope_Flat_vs_slope_2.png
+2024-11-18 10:50:45,367 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_slope_Flat_vs_slope_Down.png
+2024-11-18 10:50:45,458 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_slope_Flat_vs_slope_Up.png
+2024-11-18 10:50:45,545 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_slope_Flat_vs_ca_1.0.png
+2024-11-18 10:50:45,634 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_slope_Flat_vs_ca_2.0.png
+2024-11-18 10:50:45,724 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_slope_Flat_vs_ca_3.0.png
+2024-11-18 10:50:45,812 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_slope_Flat_vs_ca_4.0.png
+2024-11-18 10:50:45,900 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_slope_Flat_vs_thal_1.0.png
+2024-11-18 10:50:45,992 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_slope_Flat_vs_thal_2.0.png
+2024-11-18 10:50:46,084 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_slope_Flat_vs_thal_3.0.png
+2024-11-18 10:50:46,173 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_slope_Flat_vs_sex_0.png
+2024-11-18 10:50:46,262 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_slope_Flat_vs_sex_1.png
+2024-11-18 10:50:46,351 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_slope_Flat_vs_sex_F.png
+2024-11-18 10:50:46,440 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_slope_Flat_vs_sex_M.png
+2024-11-18 10:50:46,532 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_slope_Flat_vs_exang_0.png
+2024-11-18 10:50:46,624 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_slope_Flat_vs_exang_1.png
+2024-11-18 10:50:46,714 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_slope_Flat_vs_exang_N.png
+2024-11-18 10:50:46,803 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_slope_Flat_vs_exang_Y.png
+2024-11-18 10:50:46,893 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_slope_Flat_vs_target.png
+2024-11-18 10:50:46,986 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_slope_Up_vs_age.png
+2024-11-18 10:50:47,074 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_slope_Up_vs_cp.png
+2024-11-18 10:50:47,168 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_slope_Up_vs_trestbps.png
+2024-11-18 10:50:47,264 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_slope_Up_vs_chol.png
+2024-11-18 10:50:47,350 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_slope_Up_vs_fbs.png
+2024-11-18 10:50:47,449 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_slope_Up_vs_restecg.png
+2024-11-18 10:50:47,542 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_slope_Up_vs_thalach.png
+2024-11-18 10:50:47,634 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_slope_Up_vs_oldpeak.png
+2024-11-18 10:50:47,724 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_slope_Up_vs_slope_1.png
+2024-11-18 10:50:47,816 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_slope_Up_vs_slope_2.png
+2024-11-18 10:50:47,907 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_slope_Up_vs_slope_Down.png
+2024-11-18 10:50:47,995 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_slope_Up_vs_slope_Flat.png
+2024-11-18 10:50:48,083 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_slope_Up_vs_ca_1.0.png
+2024-11-18 10:50:48,171 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_slope_Up_vs_ca_2.0.png
+2024-11-18 10:50:48,259 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_slope_Up_vs_ca_3.0.png
+2024-11-18 10:50:48,347 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_slope_Up_vs_ca_4.0.png
+2024-11-18 10:50:48,436 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_slope_Up_vs_thal_1.0.png
+2024-11-18 10:50:48,528 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_slope_Up_vs_thal_2.0.png
+2024-11-18 10:50:48,619 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_slope_Up_vs_thal_3.0.png
+2024-11-18 10:50:48,712 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_slope_Up_vs_sex_0.png
+2024-11-18 10:50:48,802 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_slope_Up_vs_sex_1.png
+2024-11-18 10:50:48,889 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_slope_Up_vs_sex_F.png
+2024-11-18 10:50:48,978 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_slope_Up_vs_sex_M.png
+2024-11-18 10:50:49,069 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_slope_Up_vs_exang_0.png
+2024-11-18 10:50:49,160 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_slope_Up_vs_exang_1.png
+2024-11-18 10:50:49,249 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_slope_Up_vs_exang_N.png
+2024-11-18 10:50:49,960 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_slope_Up_vs_exang_Y.png
+2024-11-18 10:50:50,050 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_slope_Up_vs_target.png
+2024-11-18 10:50:50,146 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_ca_1.0_vs_age.png
+2024-11-18 10:50:50,235 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_ca_1.0_vs_cp.png
+2024-11-18 10:50:50,334 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_ca_1.0_vs_trestbps.png
+2024-11-18 10:50:50,430 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_ca_1.0_vs_chol.png
+2024-11-18 10:50:50,519 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_ca_1.0_vs_fbs.png
+2024-11-18 10:50:50,616 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_ca_1.0_vs_restecg.png
+2024-11-18 10:50:50,711 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_ca_1.0_vs_thalach.png
+2024-11-18 10:50:50,800 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_ca_1.0_vs_oldpeak.png
+2024-11-18 10:50:50,892 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_ca_1.0_vs_slope_1.png
+2024-11-18 10:50:50,983 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_ca_1.0_vs_slope_2.png
+2024-11-18 10:50:51,071 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_ca_1.0_vs_slope_Down.png
+2024-11-18 10:50:51,163 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_ca_1.0_vs_slope_Flat.png
+2024-11-18 10:50:51,251 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_ca_1.0_vs_slope_Up.png
+2024-11-18 10:50:51,340 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_ca_1.0_vs_ca_2.0.png
+2024-11-18 10:50:51,430 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_ca_1.0_vs_ca_3.0.png
+2024-11-18 10:50:51,518 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_ca_1.0_vs_ca_4.0.png
+2024-11-18 10:50:51,606 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_ca_1.0_vs_thal_1.0.png
+2024-11-18 10:50:51,697 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_ca_1.0_vs_thal_2.0.png
+2024-11-18 10:50:51,786 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_ca_1.0_vs_thal_3.0.png
+2024-11-18 10:50:51,873 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_ca_1.0_vs_sex_0.png
+2024-11-18 10:50:51,964 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_ca_1.0_vs_sex_1.png
+2024-11-18 10:50:52,052 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_ca_1.0_vs_sex_F.png
+2024-11-18 10:50:52,142 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_ca_1.0_vs_sex_M.png
+2024-11-18 10:50:52,231 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_ca_1.0_vs_exang_0.png
+2024-11-18 10:50:52,322 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_ca_1.0_vs_exang_1.png
+2024-11-18 10:50:52,408 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_ca_1.0_vs_exang_N.png
+2024-11-18 10:50:52,500 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_ca_1.0_vs_exang_Y.png
+2024-11-18 10:50:52,589 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_ca_1.0_vs_target.png
+2024-11-18 10:50:52,681 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_ca_2.0_vs_age.png
+2024-11-18 10:50:52,770 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_ca_2.0_vs_cp.png
+2024-11-18 10:50:52,865 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_ca_2.0_vs_trestbps.png
+2024-11-18 10:50:52,961 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_ca_2.0_vs_chol.png
+2024-11-18 10:50:53,048 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_ca_2.0_vs_fbs.png
+2024-11-18 10:50:53,142 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_ca_2.0_vs_restecg.png
+2024-11-18 10:50:53,235 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_ca_2.0_vs_thalach.png
+2024-11-18 10:50:53,326 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_ca_2.0_vs_oldpeak.png
+2024-11-18 10:50:53,417 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_ca_2.0_vs_slope_1.png
+2024-11-18 10:50:53,507 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_ca_2.0_vs_slope_2.png
+2024-11-18 10:50:53,598 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_ca_2.0_vs_slope_Down.png
+2024-11-18 10:50:53,684 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_ca_2.0_vs_slope_Flat.png
+2024-11-18 10:50:53,773 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_ca_2.0_vs_slope_Up.png
+2024-11-18 10:50:53,861 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_ca_2.0_vs_ca_1.0.png
+2024-11-18 10:50:53,949 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_ca_2.0_vs_ca_3.0.png
+2024-11-18 10:50:54,039 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_ca_2.0_vs_ca_4.0.png
+2024-11-18 10:50:54,127 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_ca_2.0_vs_thal_1.0.png
+2024-11-18 10:50:54,218 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_ca_2.0_vs_thal_2.0.png
+2024-11-18 10:50:54,309 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_ca_2.0_vs_thal_3.0.png
+2024-11-18 10:50:54,397 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_ca_2.0_vs_sex_0.png
+2024-11-18 10:50:54,489 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_ca_2.0_vs_sex_1.png
+2024-11-18 10:50:54,578 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_ca_2.0_vs_sex_F.png
+2024-11-18 10:50:54,667 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_ca_2.0_vs_sex_M.png
+2024-11-18 10:50:54,755 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_ca_2.0_vs_exang_0.png
+2024-11-18 10:50:54,847 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_ca_2.0_vs_exang_1.png
+2024-11-18 10:50:54,933 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_ca_2.0_vs_exang_N.png
+2024-11-18 10:50:55,021 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_ca_2.0_vs_exang_Y.png
+2024-11-18 10:50:55,110 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_ca_2.0_vs_target.png
+2024-11-18 10:50:55,201 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_ca_3.0_vs_age.png
+2024-11-18 10:50:55,288 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_ca_3.0_vs_cp.png
+2024-11-18 10:50:55,385 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_ca_3.0_vs_trestbps.png
+2024-11-18 10:50:55,480 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_ca_3.0_vs_chol.png
+2024-11-18 10:50:55,567 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_ca_3.0_vs_fbs.png
+2024-11-18 10:50:55,661 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_ca_3.0_vs_restecg.png
+2024-11-18 10:50:55,755 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_ca_3.0_vs_thalach.png
+2024-11-18 10:50:55,845 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_ca_3.0_vs_oldpeak.png
+2024-11-18 10:50:55,936 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_ca_3.0_vs_slope_1.png
+2024-11-18 10:50:56,025 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_ca_3.0_vs_slope_2.png
+2024-11-18 10:50:56,114 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_ca_3.0_vs_slope_Down.png
+2024-11-18 10:50:56,203 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_ca_3.0_vs_slope_Flat.png
+2024-11-18 10:50:56,292 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_ca_3.0_vs_slope_Up.png
+2024-11-18 10:50:56,381 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_ca_3.0_vs_ca_1.0.png
+2024-11-18 10:50:56,469 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_ca_3.0_vs_ca_2.0.png
+2024-11-18 10:50:56,557 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_ca_3.0_vs_ca_4.0.png
+2024-11-18 10:50:56,644 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_ca_3.0_vs_thal_1.0.png
+2024-11-18 10:50:56,736 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_ca_3.0_vs_thal_2.0.png
+2024-11-18 10:50:56,826 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_ca_3.0_vs_thal_3.0.png
+2024-11-18 10:50:56,938 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_ca_3.0_vs_sex_0.png
+2024-11-18 10:50:57,027 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_ca_3.0_vs_sex_1.png
+2024-11-18 10:50:57,116 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_ca_3.0_vs_sex_F.png
+2024-11-18 10:50:57,203 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_ca_3.0_vs_sex_M.png
+2024-11-18 10:50:57,295 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_ca_3.0_vs_exang_0.png
+2024-11-18 10:50:57,383 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_ca_3.0_vs_exang_1.png
+2024-11-18 10:50:57,470 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_ca_3.0_vs_exang_N.png
+2024-11-18 10:50:57,557 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_ca_3.0_vs_exang_Y.png
+2024-11-18 10:50:57,647 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_ca_3.0_vs_target.png
+2024-11-18 10:50:57,738 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_ca_4.0_vs_age.png
+2024-11-18 10:50:57,829 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_ca_4.0_vs_cp.png
+2024-11-18 10:50:57,925 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_ca_4.0_vs_trestbps.png
+2024-11-18 10:50:58,022 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_ca_4.0_vs_chol.png
+2024-11-18 10:50:58,110 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_ca_4.0_vs_fbs.png
+2024-11-18 10:50:58,212 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_ca_4.0_vs_restecg.png
+2024-11-18 10:50:58,305 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_ca_4.0_vs_thalach.png
+2024-11-18 10:50:58,398 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_ca_4.0_vs_oldpeak.png
+2024-11-18 10:50:58,488 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_ca_4.0_vs_slope_1.png
+2024-11-18 10:50:58,579 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_ca_4.0_vs_slope_2.png
+2024-11-18 10:50:58,668 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_ca_4.0_vs_slope_Down.png
+2024-11-18 10:50:58,757 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_ca_4.0_vs_slope_Flat.png
+2024-11-18 10:50:58,846 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_ca_4.0_vs_slope_Up.png
+2024-11-18 10:50:58,936 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_ca_4.0_vs_ca_1.0.png
+2024-11-18 10:50:59,027 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_ca_4.0_vs_ca_2.0.png
+2024-11-18 10:50:59,118 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_ca_4.0_vs_ca_3.0.png
+2024-11-18 10:50:59,204 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_ca_4.0_vs_thal_1.0.png
+2024-11-18 10:50:59,292 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_ca_4.0_vs_thal_2.0.png
+2024-11-18 10:50:59,381 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_ca_4.0_vs_thal_3.0.png
+2024-11-18 10:50:59,470 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_ca_4.0_vs_sex_0.png
+2024-11-18 10:50:59,564 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_ca_4.0_vs_sex_1.png
+2024-11-18 10:50:59,669 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_ca_4.0_vs_sex_F.png
+2024-11-18 10:50:59,757 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_ca_4.0_vs_sex_M.png
+2024-11-18 10:50:59,850 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_ca_4.0_vs_exang_0.png
+2024-11-18 10:50:59,942 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_ca_4.0_vs_exang_1.png
+2024-11-18 10:51:00,036 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_ca_4.0_vs_exang_N.png
+2024-11-18 10:51:00,126 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_ca_4.0_vs_exang_Y.png
+2024-11-18 10:51:00,215 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_ca_4.0_vs_target.png
+2024-11-18 10:51:00,310 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_thal_1.0_vs_age.png
+2024-11-18 10:51:00,398 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_thal_1.0_vs_cp.png
+2024-11-18 10:51:00,494 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_thal_1.0_vs_trestbps.png
+2024-11-18 10:51:00,592 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_thal_1.0_vs_chol.png
+2024-11-18 10:51:00,680 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_thal_1.0_vs_fbs.png
+2024-11-18 10:51:00,774 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_thal_1.0_vs_restecg.png
+2024-11-18 10:51:00,869 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_thal_1.0_vs_thalach.png
+2024-11-18 10:51:00,961 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_thal_1.0_vs_oldpeak.png
+2024-11-18 10:51:01,052 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_thal_1.0_vs_slope_1.png
+2024-11-18 10:51:01,144 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_thal_1.0_vs_slope_2.png
+2024-11-18 10:51:01,235 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_thal_1.0_vs_slope_Down.png
+2024-11-18 10:51:01,323 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_thal_1.0_vs_slope_Flat.png
+2024-11-18 10:51:01,413 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_thal_1.0_vs_slope_Up.png
+2024-11-18 10:51:01,502 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_thal_1.0_vs_ca_1.0.png
+2024-11-18 10:51:01,592 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_thal_1.0_vs_ca_2.0.png
+2024-11-18 10:51:01,679 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_thal_1.0_vs_ca_3.0.png
+2024-11-18 10:51:01,770 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_thal_1.0_vs_ca_4.0.png
+2024-11-18 10:51:01,858 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_thal_1.0_vs_thal_2.0.png
+2024-11-18 10:51:01,950 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_thal_1.0_vs_thal_3.0.png
+2024-11-18 10:51:02,040 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_thal_1.0_vs_sex_0.png
+2024-11-18 10:51:02,131 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_thal_1.0_vs_sex_1.png
+2024-11-18 10:51:02,219 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_thal_1.0_vs_sex_F.png
+2024-11-18 10:51:02,314 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_thal_1.0_vs_sex_M.png
+2024-11-18 10:51:02,402 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_thal_1.0_vs_exang_0.png
+2024-11-18 10:51:02,493 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_thal_1.0_vs_exang_1.png
+2024-11-18 10:51:02,583 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_thal_1.0_vs_exang_N.png
+2024-11-18 10:51:02,671 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_thal_1.0_vs_exang_Y.png
+2024-11-18 10:51:02,761 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_thal_1.0_vs_target.png
+2024-11-18 10:51:02,853 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_thal_2.0_vs_age.png
+2024-11-18 10:51:02,947 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_thal_2.0_vs_cp.png
+2024-11-18 10:51:03,043 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_thal_2.0_vs_trestbps.png
+2024-11-18 10:51:03,141 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_thal_2.0_vs_chol.png
+2024-11-18 10:51:03,230 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_thal_2.0_vs_fbs.png
+2024-11-18 10:51:03,327 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_thal_2.0_vs_restecg.png
+2024-11-18 10:51:03,424 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_thal_2.0_vs_thalach.png
+2024-11-18 10:51:03,526 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_thal_2.0_vs_oldpeak.png
+2024-11-18 10:51:03,618 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_thal_2.0_vs_slope_1.png
+2024-11-18 10:51:03,710 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_thal_2.0_vs_slope_2.png
+2024-11-18 10:51:03,800 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_thal_2.0_vs_slope_Down.png
+2024-11-18 10:51:03,895 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_thal_2.0_vs_slope_Flat.png
+2024-11-18 10:51:03,985 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_thal_2.0_vs_slope_Up.png
+2024-11-18 10:51:04,077 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_thal_2.0_vs_ca_1.0.png
+2024-11-18 10:51:04,169 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_thal_2.0_vs_ca_2.0.png
+2024-11-18 10:51:04,257 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_thal_2.0_vs_ca_3.0.png
+2024-11-18 10:51:04,348 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_thal_2.0_vs_ca_4.0.png
+2024-11-18 10:51:04,438 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_thal_2.0_vs_thal_1.0.png
+2024-11-18 10:51:04,527 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_thal_2.0_vs_thal_3.0.png
+2024-11-18 10:51:04,619 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_thal_2.0_vs_sex_0.png
+2024-11-18 10:51:04,707 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_thal_2.0_vs_sex_1.png
+2024-11-18 10:51:04,796 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_thal_2.0_vs_sex_F.png
+2024-11-18 10:51:04,888 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_thal_2.0_vs_sex_M.png
+2024-11-18 10:51:04,978 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_thal_2.0_vs_exang_0.png
+2024-11-18 10:51:05,070 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_thal_2.0_vs_exang_1.png
+2024-11-18 10:51:05,162 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_thal_2.0_vs_exang_N.png
+2024-11-18 10:51:05,252 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_thal_2.0_vs_exang_Y.png
+2024-11-18 10:51:05,345 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_thal_2.0_vs_target.png
+2024-11-18 10:51:05,438 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_thal_3.0_vs_age.png
+2024-11-18 10:51:05,527 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_thal_3.0_vs_cp.png
+2024-11-18 10:51:05,627 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_thal_3.0_vs_trestbps.png
+2024-11-18 10:51:05,722 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_thal_3.0_vs_chol.png
+2024-11-18 10:51:05,828 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_thal_3.0_vs_fbs.png
+2024-11-18 10:51:05,926 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_thal_3.0_vs_restecg.png
+2024-11-18 10:51:06,020 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_thal_3.0_vs_thalach.png
+2024-11-18 10:51:06,113 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_thal_3.0_vs_oldpeak.png
+2024-11-18 10:51:06,204 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_thal_3.0_vs_slope_1.png
+2024-11-18 10:51:06,295 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_thal_3.0_vs_slope_2.png
+2024-11-18 10:51:06,388 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_thal_3.0_vs_slope_Down.png
+2024-11-18 10:51:06,477 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_thal_3.0_vs_slope_Flat.png
+2024-11-18 10:51:06,568 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_thal_3.0_vs_slope_Up.png
+2024-11-18 10:51:06,658 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_thal_3.0_vs_ca_1.0.png
+2024-11-18 10:51:06,751 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_thal_3.0_vs_ca_2.0.png
+2024-11-18 10:51:06,841 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_thal_3.0_vs_ca_3.0.png
+2024-11-18 10:51:06,932 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_thal_3.0_vs_ca_4.0.png
+2024-11-18 10:51:07,023 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_thal_3.0_vs_thal_1.0.png
+2024-11-18 10:51:07,113 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_thal_3.0_vs_thal_2.0.png
+2024-11-18 10:51:07,207 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_thal_3.0_vs_sex_0.png
+2024-11-18 10:51:07,298 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_thal_3.0_vs_sex_1.png
+2024-11-18 10:51:07,389 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_thal_3.0_vs_sex_F.png
+2024-11-18 10:51:07,477 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_thal_3.0_vs_sex_M.png
+2024-11-18 10:51:07,570 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_thal_3.0_vs_exang_0.png
+2024-11-18 10:51:07,661 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_thal_3.0_vs_exang_1.png
+2024-11-18 10:51:07,754 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_thal_3.0_vs_exang_N.png
+2024-11-18 10:51:07,847 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_thal_3.0_vs_exang_Y.png
+2024-11-18 10:51:07,937 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_thal_3.0_vs_target.png
+2024-11-18 10:51:08,028 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_sex_0_vs_age.png
+2024-11-18 10:51:08,117 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_sex_0_vs_cp.png
+2024-11-18 10:51:08,213 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_sex_0_vs_trestbps.png
+2024-11-18 10:51:08,312 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_sex_0_vs_chol.png
+2024-11-18 10:51:08,400 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_sex_0_vs_fbs.png
+2024-11-18 10:51:08,496 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_sex_0_vs_restecg.png
+2024-11-18 10:51:08,591 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_sex_0_vs_thalach.png
+2024-11-18 10:51:08,685 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_sex_0_vs_oldpeak.png
+2024-11-18 10:51:08,775 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_sex_0_vs_slope_1.png
+2024-11-18 10:51:08,866 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_sex_0_vs_slope_2.png
+2024-11-18 10:51:08,965 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_sex_0_vs_slope_Down.png
+2024-11-18 10:51:09,055 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_sex_0_vs_slope_Flat.png
+2024-11-18 10:51:09,146 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_sex_0_vs_slope_Up.png
+2024-11-18 10:51:09,254 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_sex_0_vs_ca_1.0.png
+2024-11-18 10:51:09,344 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_sex_0_vs_ca_2.0.png
+2024-11-18 10:51:09,434 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_sex_0_vs_ca_3.0.png
+2024-11-18 10:51:09,523 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_sex_0_vs_ca_4.0.png
+2024-11-18 10:51:09,614 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_sex_0_vs_thal_1.0.png
+2024-11-18 10:51:09,704 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_sex_0_vs_thal_2.0.png
+2024-11-18 10:51:09,798 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_sex_0_vs_thal_3.0.png
+2024-11-18 10:51:09,885 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_sex_0_vs_sex_1.png
+2024-11-18 10:51:09,975 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_sex_0_vs_sex_F.png
+2024-11-18 10:51:10,068 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_sex_0_vs_sex_M.png
+2024-11-18 10:51:10,160 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_sex_0_vs_exang_0.png
+2024-11-18 10:51:10,252 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_sex_0_vs_exang_1.png
+2024-11-18 10:51:10,340 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_sex_0_vs_exang_N.png
+2024-11-18 10:51:10,430 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_sex_0_vs_exang_Y.png
+2024-11-18 10:51:10,520 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_sex_0_vs_target.png
+2024-11-18 10:51:10,613 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_sex_1_vs_age.png
+2024-11-18 10:51:10,703 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_sex_1_vs_cp.png
+2024-11-18 10:51:10,803 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_sex_1_vs_trestbps.png
+2024-11-18 10:51:10,907 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_sex_1_vs_chol.png
+2024-11-18 10:51:10,994 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_sex_1_vs_fbs.png
+2024-11-18 10:51:11,090 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_sex_1_vs_restecg.png
+2024-11-18 10:51:11,186 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_sex_1_vs_thalach.png
+2024-11-18 10:51:11,279 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_sex_1_vs_oldpeak.png
+2024-11-18 10:51:11,369 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_sex_1_vs_slope_1.png
+2024-11-18 10:51:11,458 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_sex_1_vs_slope_2.png
+2024-11-18 10:51:11,549 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_sex_1_vs_slope_Down.png
+2024-11-18 10:51:11,644 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_sex_1_vs_slope_Flat.png
+2024-11-18 10:51:11,732 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_sex_1_vs_slope_Up.png
+2024-11-18 10:51:11,824 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_sex_1_vs_ca_1.0.png
+2024-11-18 10:51:11,913 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_sex_1_vs_ca_2.0.png
+2024-11-18 10:51:12,003 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_sex_1_vs_ca_3.0.png
+2024-11-18 10:51:12,094 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_sex_1_vs_ca_4.0.png
+2024-11-18 10:51:12,185 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_sex_1_vs_thal_1.0.png
+2024-11-18 10:51:12,277 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_sex_1_vs_thal_2.0.png
+2024-11-18 10:51:12,368 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_sex_1_vs_thal_3.0.png
+2024-11-18 10:51:12,458 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_sex_1_vs_sex_0.png
+2024-11-18 10:51:12,549 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_sex_1_vs_sex_F.png
+2024-11-18 10:51:12,638 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_sex_1_vs_sex_M.png
+2024-11-18 10:51:12,730 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_sex_1_vs_exang_0.png
+2024-11-18 10:51:12,821 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_sex_1_vs_exang_1.png
+2024-11-18 10:51:12,911 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_sex_1_vs_exang_N.png
+2024-11-18 10:51:13,001 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_sex_1_vs_exang_Y.png
+2024-11-18 10:51:13,094 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_sex_1_vs_target.png
+2024-11-18 10:51:13,185 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_sex_F_vs_age.png
+2024-11-18 10:51:13,273 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_sex_F_vs_cp.png
+2024-11-18 10:51:13,367 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_sex_F_vs_trestbps.png
+2024-11-18 10:51:13,460 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_sex_F_vs_chol.png
+2024-11-18 10:51:13,548 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_sex_F_vs_fbs.png
+2024-11-18 10:51:13,643 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_sex_F_vs_restecg.png
+2024-11-18 10:51:13,737 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_sex_F_vs_thalach.png
+2024-11-18 10:51:13,829 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_sex_F_vs_oldpeak.png
+2024-11-18 10:51:13,917 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_sex_F_vs_slope_1.png
+2024-11-18 10:51:14,009 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_sex_F_vs_slope_2.png
+2024-11-18 10:51:14,096 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_sex_F_vs_slope_Down.png
+2024-11-18 10:51:14,185 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_sex_F_vs_slope_Flat.png
+2024-11-18 10:51:14,274 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_sex_F_vs_slope_Up.png
+2024-11-18 10:51:14,361 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_sex_F_vs_ca_1.0.png
+2024-11-18 10:51:14,452 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_sex_F_vs_ca_2.0.png
+2024-11-18 10:51:14,540 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_sex_F_vs_ca_3.0.png
+2024-11-18 10:51:14,629 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_sex_F_vs_ca_4.0.png
+2024-11-18 10:51:14,716 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_sex_F_vs_thal_1.0.png
+2024-11-18 10:51:14,808 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_sex_F_vs_thal_2.0.png
+2024-11-18 10:51:14,897 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_sex_F_vs_thal_3.0.png
+2024-11-18 10:51:14,987 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_sex_F_vs_sex_0.png
+2024-11-18 10:51:15,077 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_sex_F_vs_sex_1.png
+2024-11-18 10:51:15,164 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_sex_F_vs_sex_M.png
+2024-11-18 10:51:15,253 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_sex_F_vs_exang_0.png
+2024-11-18 10:51:15,344 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_sex_F_vs_exang_1.png
+2024-11-18 10:51:15,434 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_sex_F_vs_exang_N.png
+2024-11-18 10:51:15,523 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_sex_F_vs_exang_Y.png
+2024-11-18 10:51:15,615 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_sex_F_vs_target.png
+2024-11-18 10:51:15,708 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_sex_M_vs_age.png
+2024-11-18 10:51:15,796 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_sex_M_vs_cp.png
+2024-11-18 10:51:15,891 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_sex_M_vs_trestbps.png
+2024-11-18 10:51:15,987 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_sex_M_vs_chol.png
+2024-11-18 10:51:16,073 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_sex_M_vs_fbs.png
+2024-11-18 10:51:16,167 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_sex_M_vs_restecg.png
+2024-11-18 10:51:16,263 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_sex_M_vs_thalach.png
+2024-11-18 10:51:16,353 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_sex_M_vs_oldpeak.png
+2024-11-18 10:51:16,441 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_sex_M_vs_slope_1.png
+2024-11-18 10:51:16,534 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_sex_M_vs_slope_2.png
+2024-11-18 10:51:16,621 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_sex_M_vs_slope_Down.png
+2024-11-18 10:51:16,713 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_sex_M_vs_slope_Flat.png
+2024-11-18 10:51:16,799 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_sex_M_vs_slope_Up.png
+2024-11-18 10:51:16,890 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_sex_M_vs_ca_1.0.png
+2024-11-18 10:51:16,977 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_sex_M_vs_ca_2.0.png
+2024-11-18 10:51:17,066 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_sex_M_vs_ca_3.0.png
+2024-11-18 10:51:17,154 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_sex_M_vs_ca_4.0.png
+2024-11-18 10:51:17,244 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_sex_M_vs_thal_1.0.png
+2024-11-18 10:51:17,337 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_sex_M_vs_thal_2.0.png
+2024-11-18 10:51:17,429 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_sex_M_vs_thal_3.0.png
+2024-11-18 10:51:17,519 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_sex_M_vs_sex_0.png
+2024-11-18 10:51:17,608 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_sex_M_vs_sex_1.png
+2024-11-18 10:51:17,694 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_sex_M_vs_sex_F.png
+2024-11-18 10:51:17,787 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_sex_M_vs_exang_0.png
+2024-11-18 10:51:17,900 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_sex_M_vs_exang_1.png
+2024-11-18 10:51:17,999 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_sex_M_vs_exang_N.png
+2024-11-18 10:51:18,087 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_sex_M_vs_exang_Y.png
+2024-11-18 10:51:18,177 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_sex_M_vs_target.png
+2024-11-18 10:51:18,272 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_exang_0_vs_age.png
+2024-11-18 10:51:18,365 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_exang_0_vs_cp.png
+2024-11-18 10:51:18,460 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_exang_0_vs_trestbps.png
+2024-11-18 10:51:18,558 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_exang_0_vs_chol.png
+2024-11-18 10:51:18,648 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_exang_0_vs_fbs.png
+2024-11-18 10:51:18,744 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_exang_0_vs_restecg.png
+2024-11-18 10:51:18,839 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_exang_0_vs_thalach.png
+2024-11-18 10:51:19,670 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_exang_0_vs_oldpeak.png
+2024-11-18 10:51:19,764 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_exang_0_vs_slope_1.png
+2024-11-18 10:51:19,857 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_exang_0_vs_slope_2.png
+2024-11-18 10:51:19,950 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_exang_0_vs_slope_Down.png
+2024-11-18 10:51:20,043 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_exang_0_vs_slope_Flat.png
+2024-11-18 10:51:20,136 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_exang_0_vs_slope_Up.png
+2024-11-18 10:51:20,228 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_exang_0_vs_ca_1.0.png
+2024-11-18 10:51:20,319 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_exang_0_vs_ca_2.0.png
+2024-11-18 10:51:20,409 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_exang_0_vs_ca_3.0.png
+2024-11-18 10:51:20,502 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_exang_0_vs_ca_4.0.png
+2024-11-18 10:51:20,591 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_exang_0_vs_thal_1.0.png
+2024-11-18 10:51:20,685 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_exang_0_vs_thal_2.0.png
+2024-11-18 10:51:20,778 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_exang_0_vs_thal_3.0.png
+2024-11-18 10:51:20,869 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_exang_0_vs_sex_0.png
+2024-11-18 10:51:20,961 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_exang_0_vs_sex_1.png
+2024-11-18 10:51:21,053 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_exang_0_vs_sex_F.png
+2024-11-18 10:51:21,143 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_exang_0_vs_sex_M.png
+2024-11-18 10:51:21,236 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_exang_0_vs_exang_1.png
+2024-11-18 10:51:21,326 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_exang_0_vs_exang_N.png
+2024-11-18 10:51:21,419 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_exang_0_vs_exang_Y.png
+2024-11-18 10:51:21,510 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_exang_0_vs_target.png
+2024-11-18 10:51:21,604 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_exang_1_vs_age.png
+2024-11-18 10:51:21,696 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_exang_1_vs_cp.png
+2024-11-18 10:51:21,792 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_exang_1_vs_trestbps.png
+2024-11-18 10:51:21,888 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_exang_1_vs_chol.png
+2024-11-18 10:51:21,976 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_exang_1_vs_fbs.png
+2024-11-18 10:51:22,074 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_exang_1_vs_restecg.png
+2024-11-18 10:51:22,169 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_exang_1_vs_thalach.png
+2024-11-18 10:51:22,263 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_exang_1_vs_oldpeak.png
+2024-11-18 10:51:22,359 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_exang_1_vs_slope_1.png
+2024-11-18 10:51:22,448 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_exang_1_vs_slope_2.png
+2024-11-18 10:51:22,539 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_exang_1_vs_slope_Down.png
+2024-11-18 10:51:22,628 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_exang_1_vs_slope_Flat.png
+2024-11-18 10:51:22,722 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_exang_1_vs_slope_Up.png
+2024-11-18 10:51:22,811 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_exang_1_vs_ca_1.0.png
+2024-11-18 10:51:22,902 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_exang_1_vs_ca_2.0.png
+2024-11-18 10:51:22,992 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_exang_1_vs_ca_3.0.png
+2024-11-18 10:51:23,084 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_exang_1_vs_ca_4.0.png
+2024-11-18 10:51:23,173 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_exang_1_vs_thal_1.0.png
+2024-11-18 10:51:23,265 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_exang_1_vs_thal_2.0.png
+2024-11-18 10:51:23,355 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_exang_1_vs_thal_3.0.png
+2024-11-18 10:51:23,445 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_exang_1_vs_sex_0.png
+2024-11-18 10:51:23,536 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_exang_1_vs_sex_1.png
+2024-11-18 10:51:23,631 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_exang_1_vs_sex_F.png
+2024-11-18 10:51:23,721 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_exang_1_vs_sex_M.png
+2024-11-18 10:51:23,812 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_exang_1_vs_exang_0.png
+2024-11-18 10:51:23,902 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_exang_1_vs_exang_N.png
+2024-11-18 10:51:23,992 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_exang_1_vs_exang_Y.png
+2024-11-18 10:51:24,087 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_exang_1_vs_target.png
+2024-11-18 10:51:24,180 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_exang_N_vs_age.png
+2024-11-18 10:51:24,268 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_exang_N_vs_cp.png
+2024-11-18 10:51:24,363 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_exang_N_vs_trestbps.png
+2024-11-18 10:51:24,460 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_exang_N_vs_chol.png
+2024-11-18 10:51:24,548 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_exang_N_vs_fbs.png
+2024-11-18 10:51:24,644 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_exang_N_vs_restecg.png
+2024-11-18 10:51:24,738 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_exang_N_vs_thalach.png
+2024-11-18 10:51:24,828 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_exang_N_vs_oldpeak.png
+2024-11-18 10:51:24,920 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_exang_N_vs_slope_1.png
+2024-11-18 10:51:25,008 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_exang_N_vs_slope_2.png
+2024-11-18 10:51:25,098 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_exang_N_vs_slope_Down.png
+2024-11-18 10:51:25,187 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_exang_N_vs_slope_Flat.png
+2024-11-18 10:51:25,278 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_exang_N_vs_slope_Up.png
+2024-11-18 10:51:25,365 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_exang_N_vs_ca_1.0.png
+2024-11-18 10:51:25,460 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_exang_N_vs_ca_2.0.png
+2024-11-18 10:51:25,546 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_exang_N_vs_ca_3.0.png
+2024-11-18 10:51:25,633 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_exang_N_vs_ca_4.0.png
+2024-11-18 10:51:25,720 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_exang_N_vs_thal_1.0.png
+2024-11-18 10:51:25,810 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_exang_N_vs_thal_2.0.png
+2024-11-18 10:51:25,903 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_exang_N_vs_thal_3.0.png
+2024-11-18 10:51:25,992 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_exang_N_vs_sex_0.png
+2024-11-18 10:51:26,083 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_exang_N_vs_sex_1.png
+2024-11-18 10:51:26,170 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_exang_N_vs_sex_F.png
+2024-11-18 10:51:26,257 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_exang_N_vs_sex_M.png
+2024-11-18 10:51:26,347 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_exang_N_vs_exang_0.png
+2024-11-18 10:51:26,437 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_exang_N_vs_exang_1.png
+2024-11-18 10:51:26,527 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_exang_N_vs_exang_Y.png
+2024-11-18 10:51:26,616 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_exang_N_vs_target.png
+2024-11-18 10:51:26,710 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_exang_Y_vs_age.png
+2024-11-18 10:51:26,797 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_exang_Y_vs_cp.png
+2024-11-18 10:51:26,894 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_exang_Y_vs_trestbps.png
+2024-11-18 10:51:26,988 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_exang_Y_vs_chol.png
+2024-11-18 10:51:27,080 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_exang_Y_vs_fbs.png
+2024-11-18 10:51:27,173 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_exang_Y_vs_restecg.png
+2024-11-18 10:51:27,266 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_exang_Y_vs_thalach.png
+2024-11-18 10:51:27,357 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_exang_Y_vs_oldpeak.png
+2024-11-18 10:51:27,446 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_exang_Y_vs_slope_1.png
+2024-11-18 10:51:27,537 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_exang_Y_vs_slope_2.png
+2024-11-18 10:51:27,625 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_exang_Y_vs_slope_Down.png
+2024-11-18 10:51:27,716 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_exang_Y_vs_slope_Flat.png
+2024-11-18 10:51:27,804 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_exang_Y_vs_slope_Up.png
+2024-11-18 10:51:27,893 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_exang_Y_vs_ca_1.0.png
+2024-11-18 10:51:27,981 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_exang_Y_vs_ca_2.0.png
+2024-11-18 10:51:28,073 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_exang_Y_vs_ca_3.0.png
+2024-11-18 10:51:28,161 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_exang_Y_vs_ca_4.0.png
+2024-11-18 10:51:28,251 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_exang_Y_vs_thal_1.0.png
+2024-11-18 10:51:28,338 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_exang_Y_vs_thal_2.0.png
+2024-11-18 10:51:28,428 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_exang_Y_vs_thal_3.0.png
+2024-11-18 10:51:28,520 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_exang_Y_vs_sex_0.png
+2024-11-18 10:51:28,610 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_exang_Y_vs_sex_1.png
+2024-11-18 10:51:28,699 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_exang_Y_vs_sex_F.png
+2024-11-18 10:51:28,787 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_exang_Y_vs_sex_M.png
+2024-11-18 10:51:28,882 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_exang_Y_vs_exang_0.png
+2024-11-18 10:51:28,974 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_exang_Y_vs_exang_1.png
+2024-11-18 10:51:29,075 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_exang_Y_vs_exang_N.png
+2024-11-18 10:51:29,167 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_exang_Y_vs_target.png
+2024-11-18 10:51:29,262 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_target_vs_age.png
+2024-11-18 10:51:29,351 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_target_vs_cp.png
+2024-11-18 10:51:29,448 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_target_vs_trestbps.png
+2024-11-18 10:51:29,548 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_target_vs_chol.png
+2024-11-18 10:51:29,644 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_target_vs_fbs.png
+2024-11-18 10:51:29,739 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_target_vs_restecg.png
+2024-11-18 10:51:29,835 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_target_vs_thalach.png
+2024-11-18 10:51:29,926 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_target_vs_oldpeak.png
+2024-11-18 10:51:30,019 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_target_vs_slope_1.png
+2024-11-18 10:51:30,123 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_target_vs_slope_2.png
+2024-11-18 10:51:30,214 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_target_vs_slope_Down.png
+2024-11-18 10:51:30,304 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_target_vs_slope_Flat.png
+2024-11-18 10:51:30,396 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_target_vs_slope_Up.png
+2024-11-18 10:51:30,487 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_target_vs_ca_1.0.png
+2024-11-18 10:51:30,577 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_target_vs_ca_2.0.png
+2024-11-18 10:51:30,668 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_target_vs_ca_3.0.png
+2024-11-18 10:51:30,757 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_target_vs_ca_4.0.png
+2024-11-18 10:51:30,855 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_target_vs_thal_1.0.png
+2024-11-18 10:51:30,945 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_target_vs_thal_2.0.png
+2024-11-18 10:51:31,038 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_target_vs_thal_3.0.png
+2024-11-18 10:51:31,140 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_target_vs_sex_0.png
+2024-11-18 10:51:31,246 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_target_vs_sex_1.png
+2024-11-18 10:51:31,352 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_target_vs_sex_F.png
+2024-11-18 10:51:31,457 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_target_vs_sex_M.png
+2024-11-18 10:51:31,582 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_target_vs_exang_0.png
+2024-11-18 10:51:31,680 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_target_vs_exang_1.png
+2024-11-18 10:51:31,771 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_target_vs_exang_N.png
+2024-11-18 10:51:31,861 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/scatter_target_vs_exang_Y.png
+2024-11-18 10:51:31,923 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/boxplot_age_by_target.png
+2024-11-18 10:51:31,984 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/boxplot_cp_by_target.png
+2024-11-18 10:51:32,047 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/boxplot_trestbps_by_target.png
+2024-11-18 10:51:32,116 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/boxplot_chol_by_target.png
+2024-11-18 10:51:32,175 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/boxplot_fbs_by_target.png
+2024-11-18 10:51:32,240 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/boxplot_restecg_by_target.png
+2024-11-18 10:51:32,306 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/boxplot_thalach_by_target.png
+2024-11-18 10:51:32,366 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/boxplot_oldpeak_by_target.png
+2024-11-18 10:51:32,444 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/boxplot_slope_1_by_target.png
+2024-11-18 10:51:32,505 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/boxplot_slope_2_by_target.png
+2024-11-18 10:51:32,568 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/boxplot_slope_Down_by_target.png
+2024-11-18 10:51:32,625 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/boxplot_slope_Flat_by_target.png
+2024-11-18 10:51:32,684 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/boxplot_slope_Up_by_target.png
+2024-11-18 10:51:32,745 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/boxplot_ca_1.0_by_target.png
+2024-11-18 10:51:32,807 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/boxplot_ca_2.0_by_target.png
+2024-11-18 10:51:32,865 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/boxplot_ca_3.0_by_target.png
+2024-11-18 10:51:32,923 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/boxplot_ca_4.0_by_target.png
+2024-11-18 10:51:32,982 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/boxplot_thal_1.0_by_target.png
+2024-11-18 10:51:33,046 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/boxplot_thal_2.0_by_target.png
+2024-11-18 10:51:33,111 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/boxplot_thal_3.0_by_target.png
+2024-11-18 10:51:33,173 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/boxplot_sex_0_by_target.png
+2024-11-18 10:51:33,231 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/boxplot_sex_1_by_target.png
+2024-11-18 10:51:33,291 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/boxplot_sex_F_by_target.png
+2024-11-18 10:51:33,351 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/boxplot_sex_M_by_target.png
+2024-11-18 10:51:33,414 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/boxplot_exang_0_by_target.png
+2024-11-18 10:51:33,480 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/boxplot_exang_1_by_target.png
+2024-11-18 10:51:33,539 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/boxplot_exang_N_by_target.png
+2024-11-18 10:51:33,599 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/boxplot_exang_Y_by_target.png
+2024-11-18 10:51:33,657 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/boxplot_target_by_target.png
+2024-11-18 10:51:33,658 - __main__ - INFO - [EDA] Grouped analysis by target column 'target' completed.
+2024-11-18 10:51:33,962 - __main__ - INFO - [EDA] Plot saved to u:\Projects\[2922] Data Processing\src/Graphs/missing_values_heatmap.png
+2024-11-18 10:51:33,968 - __main__ - INFO - [EDA] Outliers detected (Z-score > 3): 0
+2024-11-18 10:51:33,975 - __main__ - INFO - [EDA] Outliers detected (IQR method): 3263
+2024-11-18 10:51:33,976 - __main__ - INFO - [EDA] All EDA steps completed.
+2024-11-18 10:51:36,069 - __main__ - INFO - [HypothesisTests] Running Hypothesis Tests...
+2024-11-18 10:51:36,072 - __main__ - INFO - [HypothesisTests] Age and Heart Disease Test
+2024-11-18 10:51:36,073 - __main__ - INFO - [HypothesisTests] Null Hypothesis: There is no significant difference in the mean age between individuals with heart disease and those without.
+2024-11-18 10:51:36,074 - __main__ - INFO - [HypothesisTests] Alternative Hypothesis: There is a significant difference in the mean age between individuals with heart disease and those without.
+2024-11-18 10:51:36,075 - __main__ - INFO - [HypothesisTests] p-value = 0.0000
+2024-11-18 10:51:36,076 - __main__ - INFO - [HypothesisTests] Result: Reject the null hypothesis (p < 0.05)
+2024-11-18 10:51:36,079 - __main__ - INFO - [HypothesisTests] Cholesterol and Heart Disease Test
+2024-11-18 10:51:36,079 - __main__ - INFO - [HypothesisTests] Null Hypothesis: There is no significant difference in the mean cholesterol levels between individuals with heart disease and those without.
+2024-11-18 10:51:36,081 - __main__ - INFO - [HypothesisTests] Alternative Hypothesis: There is a significant difference in the mean cholesterol levels between individuals with heart disease and those without.
+2024-11-18 10:51:36,082 - __main__ - INFO - [HypothesisTests] p-value = 0.0000
+2024-11-18 10:51:36,082 - __main__ - INFO - [HypothesisTests] Result: Reject the null hypothesis (p < 0.05)
+2024-11-18 10:51:36,084 - __main__ - INFO - [HypothesisTests] Blood Pressure Correlation Test
+2024-11-18 10:51:36,085 - __main__ - INFO - [HypothesisTests] Null Hypothesis: There is no linear relationship between blood pressure and the presence of heart disease.
+2024-11-18 10:51:36,087 - __main__ - INFO - [HypothesisTests] Alternative Hypothesis: There is a linear relationship between blood pressure and the presence of heart disease.
+2024-11-18 10:51:36,088 - __main__ - INFO - [HypothesisTests] p-value = 0.0000
+2024-11-18 10:51:36,090 - __main__ - INFO - [HypothesisTests] Result: Reject the null hypothesis (p < 0.05)
+2024-11-18 10:51:36,093 - __main__ - INFO - [HypothesisTests] Chest Pain Type and Heart Disease Test
+2024-11-18 10:51:36,094 - __main__ - INFO - [HypothesisTests] Null Hypothesis: There is no association between chest pain type and the presence of heart disease.
+2024-11-18 10:51:36,095 - __main__ - INFO - [HypothesisTests] Alternative Hypothesis: There is an association between chest pain type and the presence of heart disease.
+2024-11-18 10:51:36,096 - __main__ - INFO - [HypothesisTests] p-value = 0.0000
+2024-11-18 10:51:36,097 - __main__ - INFO - [HypothesisTests] Result: Reject the null hypothesis (p < 0.05)
+2024-11-18 10:51:36,101 - __main__ - INFO - [HypothesisTests] Slope of ST Segment and Heart Disease Test
+2024-11-18 10:51:36,101 - __main__ - INFO - [HypothesisTests] Null Hypothesis: There is no association between the slope of the ST segment and the presence of heart disease.
+2024-11-18 10:51:36,103 - __main__ - INFO - [HypothesisTests] Alternative Hypothesis: There is an association between the slope of the ST segment and the presence of heart disease.
+2024-11-18 10:51:36,104 - __main__ - INFO - [HypothesisTests] p-value = 1.0000
+2024-11-18 10:51:36,105 - __main__ - INFO - [HypothesisTests] Result: Accept the null hypothesis (p >= 0.05)
+2024-11-18 10:51:36,106 - __main__ - INFO - [ValidateHypothesisTesting] Validating all tests...
+2024-11-18 10:51:36,107 - __main__ - INFO - [ValidateHypothesisTesting] Validating Age Hypothesis Test...
+2024-11-18 10:51:36,109 - __main__ - INFO - [Validation] Shapiro-Wilk Test for Normality:
+2024-11-18 10:51:36,110 - __main__ - INFO - [Heart Disease] W = 0.9817, p = 0.0000
+2024-11-18 10:51:36,111 - __main__ - INFO - [No Heart Disease] W = 0.9489, p = 0.0000
+2024-11-18 10:51:36,112 - __main__ - INFO - [Validation] Age data is not normally distributed. Using Mann-Whitney U Test.
+2024-11-18 10:51:36,113 - __main__ - INFO - [ValidateHypothesisTesting] Mann-Whitney U Test for Age
+2024-11-18 10:51:36,114 - __main__ - INFO - [ValidateHypothesisTesting] p-value = 0.0000
+2024-11-18 10:51:36,115 - __main__ - INFO - [ValidateHypothesisTesting] Result: Reject the null hypothesis (p < 0.05)
+2024-11-18 10:51:36,117 - __main__ - INFO - [ValidateHypothesisTesting] Validating Chest Pain Hypothesis Test...
+2024-11-18 10:51:36,120 - __main__ - INFO - [ValidateHypothesisTesting] Minimum expected frequency in contingency table: 280.4089
+2024-11-18 10:51:36,121 - __main__ - INFO - [ValidateHypothesisTesting] Assumptions of Chi-squared test are met.
