@@ -1,118 +1,129 @@
 # **Data Processing For Heart Disease Prediction**
 
 
-### **Overview**  
-This project predicts the presence of heart disease using machine learning models. The dataset contains 13 input features and 1 binary target variable (0: No Heart Disease, 1: Heart Disease). The models developed include Logistic Regression, Random Forest, and XGBoost, with preprocessing steps ensuring data quality and improved model accuracy.
+### **1. Overview of the Dataset and Problem Statement**
+The dataset consists of **13 input features** and **1 target variable** aimed at predicting heart disease presence. The target variable is binary:
+- **0**: Healthy (No Heart Disease)
+- **1**: Heart Disease
+
+**Key Features:**
+- **Patient Demographics:** Age, Sex
+- **Clinical Measurements:** Resting blood pressure (trestbps), Cholesterol (chol)
+- **Medical Tests:** Chest Pain Type (cp), Fasting Blood Sugar (fbs), Resting ECG (restecg), Maximum Heart Rate (thalach), Exercise-Induced Angina (exang), ST depression (oldpeak)
+
+**Problem Statement:**
+Using this medical dataset, we aim to develop a data processing pipeline and machine learning models to accurately predict the presence of heart disease, enabling early detection and improved patient outcomes.
 
 ---
 
-## **Project Structure**  
+### **2. Project Folder Structure**
+The project folder is organized as follows:
 
 ```
 Heart_Disease_Prediction/
-│
-├── main.ipynb              # Main Jupyter Notebook for the analysis pipeline
-│
-├── src/                    
-│   ├── __init__.py         # Package initialization file
-│   ├── preprocessing.py    # Custom functions for data preprocessing
-│   ├── models.py           # Model training, testing, and evaluation functions
-│   └── utils.py            # Utility functions for visualization and metrics
-│
-├── src/Data/Raw/           # Raw dataset files
-│   └── heart_disease.csv   # Heart Disease dataset
-│
-├── results/                # Model outputs, plots, and metrics
-│
-└── README.md               # Project description and setup instructions
+│   ├── README.md              # Project description and setup instructions
+│   ├── logs.txt               # Log file to track processes
+│   ├── main.ipynb             # Main Jupyter Notebook for the analysis pipeline
+│   └── src/                   
+│       ├── Data/              # Data directory
+│       │   ├── Cleaned/       # Cleaned dataset files
+│       │   │   └── cleaned.csv
+│       │   ├── Merged/        # Merged dataset files
+│       │   │   └── merged.csv
+│       │   ├── Processed/     # Processed data files
+│       │   │   ├── balanced_data.csv
+│       │   │   ├── engineered_data.csv
+│       │   │   ├── handlemissingvalues.csv
+│       │   │   ├── outliers_removed.csv
+│       │   │   ├── processed.csv
+│       │   │   ├── processedencodeddata.csv
+│       │   │   ├── scaled_data.csv
+│       │   │   └── selected_features.csv
+│       │   ├── Raw/           # Raw datasets
+│       │   │   ├── heart_01.csv
+│       │   │   ├── heart_02.csv
+│       │   │   ├── heart_03.csv
+│       │   │   └── heart_04.csv
+│       │   ├── Scaled/        # Scaled dataset files
+│       │   │   └── data.csv
+│       │   ├── Testing/       # Testing data
+│       │   │   └── data.csv
+│       │   └── Training/      # Training data
+│       │       └── data.csv
+│       ├── DataPreProcessing/ # Data preprocessing scripts
+│       │   ├── BalancingDataset.py
+│       │   ├── DataCleaning.py
+│       │   ├── DataEncodingCategoricalVariables.py
+│       │   ├── DataFeatureEngineering.py
+│       │   ├── DataFeatureScaling.py
+│       │   ├── DataFeatureSelection.py
+│       │   ├── DataHandleMissingValues.py
+│       │   └── DataHandlingOutlier.py
+│       ├── EDA/               # Exploratory Data Analysis
+│       │   └── eda.py
+│       ├── Graphs/            # Graphs and visualizations
+│       │   ├── EDA/           # EDA graphs in PNG format
+│       │   └── ModelsAnalysis/ # ML Models analysis graphs in PNG format
+│       ├── Helper/            # Helper scripts
+│       │   ├── dataloader.py
+│       │   ├── datasaver.py
+│       │   ├── filters.py
+│       │   └── merger.py
+│       ├── HypothesisTesting/ # Hypothesis testing scripts
+│       │   ├── HypothesisTests.py
+│       │   └── ValidateTests.py
+│       └── Training/          # Training scripts for ML models
+│           ├── compare.py
+│           ├── helper.py
+│           ├── scale.py
+│           ├── test.py
+│           └── train.py
 ```
 
----
-
-## **Installation Instructions**  
-
-1. Clone the repository:  
-   ```bash
-   git clone <repository-url>
-   cd Heart_Disease_Prediction
-   ```
-
-2. Set up a virtual environment:  
-   ```bash
-   python -m venv venv
-   source venv/bin/activate  # For Linux/Mac
-   venv\Scripts\activate     # For Windows
-   ```
-
-3. Install required libraries:  
-   ```bash
-   pip install -r requirements.txt
-   ```
+**GitHub Repository:** [Heart Disease Prediction Project](https://github.com/Vignesh16879/Data-Processing-For-Heart-Disease-Prediction.git)
 
 ---
 
-## **Usage**  
+### **3. Challenges Faced and Solutions**
 
-1. Open the Jupyter Notebook:  
-   ```bash
-   jupyter notebook
-   ```
-2. Run `main.ipynb` to execute the analysis pipeline, including:  
-   - Data preprocessing (handling missing values, encoding, scaling)  
-   - Exploratory Data Analysis (EDA)  
-   - Hypothesis testing  
-   - Model training and evaluation  
+1. **Missing Values:**
+   - **Challenge:** Features like `ca` and `thal` contained missing values.
+   - **Solution:** Imputed missing numerical values using the median and categorical values using the mode to preserve data consistency.
 
----
+2. **Categorical Data Encoding:**
+   - **Challenge:** Features such as `sex` and `cp` were categorical and required numerical transformation.
+   - **Solution:** Binary encoding for `sex` and one-hot encoding for nominal features like `cp`.
 
-## **Custom Functions**  
+3. **Imbalanced Dataset:**
+   - **Challenge:** Heart disease cases (target = 1) were underrepresented.
+   - **Solution:** Applied SMOTE (Synthetic Minority Over-Sampling Technique) to balance the dataset, ensuring equal representation of both classes.
 
-- **preprocessing.py**  
-   - Handles missing values  
-   - Categorical variable encoding  
-   - Feature scaling and balancing  
-   - Outlier detection and removal  
+4. **Feature Scaling:**
+   - **Challenge:** Features had varying magnitudes, which could affect distance-based models.
+   - **Solution:** Used standardization (z-score normalization) to ensure equal contribution of features.
 
-- **models.py**  
-   - Train and evaluate Logistic Regression, Random Forest, and XGBoost models  
-   - Compare performance between scaled and unscaled datasets  
-
-- **utils.py**  
-   - Utility functions for generating plots (e.g., correlation matrix, distributions)  
-   - Model evaluation metrics like precision, recall, and F1-score  
+5. **Outlier Detection:**
+   - **Challenge:** Extreme values in features like `chol` and `trestbps` could bias the model.
+   - **Solution:** Removed outliers using the interquartile range (IQR) method.
 
 ---
 
-## **Results**  
-
-The XGBoost model achieved the best performance:  
-- **Accuracy:** 89%  
-- **Precision:** 88%  
-- **Recall:** 87%  
-
-**Comparison Between Full Dataset and Scaled Dataset:**  
-- Scaling reduced training time by ~40%, with a minor accuracy drop of ~2%.  
-
----
-
-## **Future Improvements**  
-
-1. Implement advanced feature engineering to improve prediction accuracy.  
-2. Explore deep learning models for capturing complex patterns.  
-3. Expand the dataset to increase generalizability across diverse populations.  
+### **4. Group Contributions**
+- **Vignesh Goswami (#2020152):**
+   - Data preprocessing (handling missing values, encoding categorical variables, feature scaling).
+   - Hypothesis testing (chi-square and t-tests).
+   - Model evaluation and performance analysis.
+   - Dataset exploration and visualization.
+   - Implementation of machine learning models (Logistic Regression, Random Forest, XGBoost).
+   - Results comparison (scaled vs. unscaled datasets).
+- **Anmol Kaw (#2021234):**
+   - Data Collection.
 
 ---
 
-## **References**  
-
-1. Dataset Source: [UCI Machine Learning Repository - Heart Disease Dataset](https://archive.ics.uci.edu/ml/datasets/heart+Disease)  
-2. SMOTE Implementation: Chawla et al., SMOTE (2002).  
-3. Scikit-learn Documentation: [Link](https://scikit-learn.org)  
-
----
-
-**Contributors:**  
-- **Vignesh Goswami (#2020152)**: Preprocessing, hypothesis testing, model evaluation.  
-- **Anmol Kaw (#2021234)**: EDA, model development, results comparison.  
-
----  
+### **5. References**
+1. **Dataset Source:** UCI Machine Learning Repository: Heart Disease Dataset.
+2. **GitHub Repository:** [Heart Disease Prediction Project](https://github.com/Vignesh16879/Data-Processing-For-Heart-Disease-Prediction.git)
+3. **SMOTE Technique:** Chawla, N. V., Bowyer, K. W., Hall, L. O., & Kegelmeyer, W. P. (2002). SMOTE: Synthetic Minority Over-sampling Technique.
+4. **Chi-Square Test Reference:** Statistics and Probability Tutorials, Khan Academy.
+5. **Machine Learning Models:** Pedregosa et al., Scikit-learn: Machine Learning in Python.
