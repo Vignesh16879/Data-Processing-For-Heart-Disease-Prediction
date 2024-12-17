@@ -80,8 +80,6 @@ Heart_Disease_Prediction/
 │           └── train.py
 ```
 
-**GitHub Repository:** [Heart Disease Prediction Project](https://github.com/Vignesh16879/Data-Processing-For-Heart-Disease-Prediction.git)
-
 ---
 
 ### **3. Challenges Faced and Solutions**
@@ -123,7 +121,6 @@ Heart_Disease_Prediction/
 
 ### **5. References**
 1. **Dataset Source:** UCI Machine Learning Repository: Heart Disease Dataset.
-2. **GitHub Repository:** [Heart Disease Prediction Project](https://github.com/Vignesh16879/Data-Processing-For-Heart-Disease-Prediction.git)
-3. **SMOTE Technique:** Chawla, N. V., Bowyer, K. W., Hall, L. O., & Kegelmeyer, W. P. (2002). SMOTE: Synthetic Minority Over-sampling Technique.
-4. **Chi-Square Test Reference:** Statistics and Probability Tutorials, Khan Academy.
-5. **Machine Learning Models:** Pedregosa et al., Scikit-learn: Machine Learning in Python.
+2. **SMOTE Technique:** Chawla, N. V., Bowyer, K. W., Hall, L. O., & Kegelmeyer, W. P. (2002). SMOTE: Synthetic Minority Over-sampling Technique.
+3. **Chi-Square Test Reference:** Statistics and Probability Tutorials, Khan Academy.
+4. **Machine Learning Models:** Pedregosa et al., Scikit-learn: Machine Learning in Python.
