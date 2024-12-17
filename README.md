@@ -107,14 +107,14 @@ Heart_Disease_Prediction/
 ---
 
 ### **4. Group Contributions**
-- **Vignesh Goswami (#2020152):**
+- **Vignesh Goswami:**
    - Data preprocessing (handling missing values, encoding categorical variables, feature scaling).
    - Hypothesis testing (chi-square and t-tests).
    - Model evaluation and performance analysis.
    - Dataset exploration and visualization.
    - Implementation of machine learning models (Logistic Regression, Random Forest, XGBoost).
    - Results comparison (scaled vs. unscaled datasets).
-- **Anmol Kaw (#2021234):**
+- **Anmol Kaw:**
    - Data Collection.
 
 ---
